@@ -14,7 +14,6 @@
               <h3 class="text-left action">Level up your skills</h3>
               <h1 class="text-left action">Ready to hire in 6 months</h1>
               <h3 class="text-left action">Or less!</h3>
-              
             </div>
 
             <!-- <div class="d-none d-lg-block">
@@ -49,14 +48,14 @@
                 <Icon name="checkbox" />
                 <span>100% Online</span>
               </div>
-              
             </div>
 
             <router-link
               class="btn btn-lg btn-primary mt-5"
               to="/programs/international"
-            >Select a Monthly Plan</router-link>
-            
+              >Select a Monthly Plan</router-link
+            >
+
             <!-- </div> -->
 
             <!-- <Promo25OffMonthly style="max-width: 450px;" class="mt-5" /> -->
@@ -84,18 +83,20 @@
       <router-link
         class="btn btn-lg btn-primary mt-5"
         to="/programs/international"
-      >Select a Monthly Plan</router-link>
+        >Select a Monthly Plan</router-link
+      >
     </div>
 
-    <InternshipPartnersSection/>
-    
+    <InternshipPartnersSection />
+
     <CommercialSection />
 
     <div class="text-center mb-5">
       <router-link
         class="btn btn-lg btn-primary mt-5"
         to="/programs/international"
-      >Select a Monthly Plan</router-link>
+        >Select a Monthly Plan</router-link
+      >
     </div>
 
     <TechSection />
@@ -105,7 +106,8 @@
       <router-link
         class="btn btn-lg btn-primary mt-5"
         to="/programs/international"
-      >Select a Monthly Plan</router-link>
+        >Select a Monthly Plan</router-link
+      >
     </div>
   </div>
 </template>
@@ -138,16 +140,18 @@ export default {
     StatsSection,
     TestimonialsSection,
     CommercialSection,
-    InternshipPartnersSection
+    InternshipPartnersSection,
   },
   data: () => ({
-    hasApplied: false
+    hasApplied: false,
   }),
-  computed: { ...mapGetters(["getMethods", "getApplicant", "getPromoCodesDisplay"]) },
+  computed: {
+    ...mapGetters(["getMethods", "getApplicant", "getPromoCodesDisplay"]),
+  },
   methods: {
     async startApplication(applicant) {
       await this.$store.dispatch("startApplication", {
-        applicant
+        applicant,
       });
       await this.$store.dispatch("setStartDate", applicant.startDate);
       this.hasApplied = true;
@@ -155,16 +159,16 @@ export default {
     },
     clearApplicant() {
       this.hasApplied = false;
-    }
+    },
   },
   mounted() {
     const applicant = this.getApplicant;
     this.hasApplied = applicant;
     // this.$store.dispatch("setPriceClass", "international");
     // this.$store.dispatch("setHomepage", this.$route.fullPath);
-    // this.$store.dispatch("setProgramTitle", "CodeX Academy International");
+    // this.$store.dispatch("setProgramTitle", "Sommardahl Academy International");
     // this.$store.dispatch("setSource", "PathriseInt1");
-  }
+  },
 };
 </script>
 
