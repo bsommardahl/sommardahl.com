@@ -22,7 +22,10 @@
 
         <div class="row">
           <div class="col text-center">
-            <SelectPlanButton :plan="getCommunityPlan" text="Start Application" />
+            <SelectPlanButton
+              :plan="getCommunityPlan"
+              text="Start Application"
+            />
           </div>
         </div>
 
@@ -43,11 +46,12 @@
               Have you noticed yet? The whole world is trying to teach you to
               code! It's amazing how much high quality teaching materials exist
               on the topic of "coding" alone... and tons of those are 100% free
-              of charge! CodeX Academy believes the world needs more coders, not
-              more coding classes. To that end, throughout the CodeX Academy
-              Learning Pathways you'll find references to a plethora of curated
-              community-driven learning materials. When combined with our
-              carefully designed Learning Pathways, you're set up for success!
+              of charge! Sommardahl Academy believes the world needs more
+              coders, not more coding classes. To that end, throughout the
+              Sommardahl Academy Learning Pathways you'll find references to a
+              plethora of curated community-driven learning materials. When
+              combined with our carefully designed Learning Pathways, you're set
+              up for success!
             </p>
           </div>
         </div>
@@ -75,7 +79,7 @@
               What happens when you learn a certain technology? What's next? How
               do you know when to stop learning about a certain thing (so that
               you don't lose the information from lack of use)? These are
-              challenges CodeX Academy solves by providing learners with a
+              challenges Sommardahl Academy solves by providing learners with a
               prescriptive, step-by-step pathway. Each step builds upon the
               last. Learners are encouraged to learn "just enough" before moving
               on. Taking this "Lean" approach to learning is the best way to
@@ -102,9 +106,9 @@
               The amount of information your brain has to absorb in order to
               learn to code is immense. How in the world could all that
               information be organized so that someone can learn efficiently and
-              effectively? Great question! CodeX Academy does it with badges! As
-              you work through our Learning Pathways, you will focus on
-              "bite-sized" slices of each technology and concept, working
+              effectively? Great question! Sommardahl Academy does it with
+              badges! As you work through our Learning Pathways, you will focus
+              on "bite-sized" slices of each technology and concept, working
               towards mastery of a short list of skills. Once you have mastered
               that badge, you continue on the next. Each badge not only contains
               a list of skills/competencies, but also some suggested ways you
@@ -139,11 +143,11 @@
               your tail" for hours. We don't want to paint a bleak picture for
               you, but seriously, learning to code is hard! Just like you should
               do when you plan a caving trip, you should take a buddy (or go
-              with a group). CodeX Academy has built a community of learners and
-              mentors who are interested in walking alongside you while you
-              learn. You may still get stuck at times, but at least you will
-              have the power of a community around you to get you unstuck and
-              moving again.
+              with a group). Sommardahl Academy has built a community of
+              learners and mentors who are interested in walking alongside you
+              while you learn. You may still get stuck at times, but at least
+              you will have the power of a community around you to get you
+              unstuck and moving again.
             </p>
           </div>
         </div>
@@ -152,7 +156,10 @@
 
         <div class="row">
           <div class="col text-center">
-            <SelectPlanButton :plan="getCommunityPlan" text="Start Application" />
+            <SelectPlanButton
+              :plan="getCommunityPlan"
+              text="Start Application"
+            />
           </div>
         </div>
         <div class="mb-5"></div>
@@ -168,7 +175,7 @@ import Hero from "@/components/Hero";
 
 export default {
   components: { SelectPlanButton, Hero },
-  computed: { ...mapGetters(["getCommunityPlan"]) }
+  computed: { ...mapGetters(["getCommunityPlan"]) },
 };
 </script>
 <style lang="scss" scoped>

@@ -81,7 +81,7 @@
             css="paymentType ml-4"
           />
           <CodeXInstallments
-            v-if="paymentType.type === 'codex-installments'"
+            v-if="paymentType.type === 'sommardahl-installments'"
             :paymentType="paymentType"
             :applicant="getApplicant"
             css="paymentType ml-4"

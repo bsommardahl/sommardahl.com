@@ -27,7 +27,14 @@
     <b-modal id="modal-installments-setup" size="lg" hide-footer>
       <template v-slot:modal-title>Card You Will Use</template>
       <div class="d-block">
-        <p>CodeX Academy offers the following loan terms to help those who need smaller payments and to spread their tuition out over time. This loan is offered at 0% interest for the life of the loan. If you choose this option, we ask that you pay the first payment of $500 up front. Afterwards, an admissions counselor will reach out with more specific loan terms.</p>
+        <p>
+          Sommardahl Academy offers the following loan terms to help those who
+          need smaller payments and to spread their tuition out over time. This
+          loan is offered at 0% interest for the life of the loan. If you choose
+          this option, we ask that you pay the first payment of $500 up front.
+          Afterwards, an admissions counselor will reach out with more specific
+          loan terms.
+        </p>
         <table class="table text-center">
           <thead>
             <tr>
@@ -79,14 +86,14 @@ export default {
     number: Number,
     css: String,
     programTotal: Number,
-    programName: String
+    programName: String,
   },
   components: { Money, StripeCheckoutButton },
   data: () => ({
     nameOnCard: "",
     last4Digits: "",
     paymentDayOfTheMonth: 1,
-    navigating: false
+    navigating: false,
   }),
   methods: {
     async schedulePayment() {
@@ -95,15 +102,15 @@ export default {
 
       const payload = {
         payment_type: "fin",
-        payment_vendor: "codex",
+        payment_vendor: "sommardahl",
         email: applicant.email,
         nameOnCard: this.nameOnCard,
-        last4Digits: this.last4Digits
+        last4Digits: this.last4Digits,
       };
       this.$store.dispatch("setPaymentInfo", payload);
       this.$emit("paymentScheduled", payload);
-    }
-  }
+    },
+  },
 };
 </script>
 

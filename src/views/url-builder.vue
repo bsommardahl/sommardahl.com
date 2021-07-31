@@ -66,7 +66,7 @@ export default {
       const encoded = btoa(JSON.stringify(payload));
 
       const sku = encoded ? `sku=${encoded}&` : "";
-      return `http://codex.academy/#/${nav}?${source}${campaign}${sku}`;
+      return `http://sommardahl.com/#/${nav}?${source}${campaign}${sku}`;
     },
   },
   methods: {},

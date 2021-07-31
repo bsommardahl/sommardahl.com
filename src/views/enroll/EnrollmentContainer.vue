@@ -1,6 +1,10 @@
 <template>
   <div class="pb-5">
-    <Hero unsplashId="gnyA8vd3Otc" height="20vh" backgroundColor="rgba(25, 32, 71,0.7)">
+    <Hero
+      unsplashId="gnyA8vd3Otc"
+      height="20vh"
+      backgroundColor="rgba(25, 32, 71,0.7)"
+    >
       <h2>Application</h2>
       <h5>Just a few steps</h5>
     </Hero>
@@ -9,8 +13,8 @@
         <div class="d-none d-md-block col-4">
           <div class="sidebar">
             <p>
-              We're happy you have chosen to enroll with CodeX Academy. You're
-              just a few steps away from a bright future in coding!
+              We're happy you have chosen to enroll with Sommardahl Academy.
+              You're just a few steps away from a bright future in coding!
             </p>
             <h4>Application Steps:</h4>
             <Step
@@ -76,7 +80,7 @@ const Step = {
     name: String,
     clickable: Boolean,
     active: Boolean,
-    disabled: Boolean
+    disabled: Boolean,
   },
 
   render(createElement) {
@@ -88,9 +92,9 @@ const Step = {
       "div",
       {
         on: {
-          click: this.click
+          click: this.click,
         },
-        class: classes.trim()
+        class: classes.trim(),
       },
       [`${this.number}. ${this.name}`]
     );
@@ -100,8 +104,8 @@ const Step = {
       if (!this.active && this.clickable && !this.disabled) {
         this.$emit("click", this.number);
       }
-    }
-  }
+    },
+  },
 };
 
 const stages = {
@@ -110,13 +114,13 @@ const stages = {
   3: "/enroll/appfee",
   4: "/enroll/waitForApproval",
   5: "/enroll/payment",
-  6: "/enroll/complete"
+  6: "/enroll/complete",
 };
 
 export default {
   components: { Hero, Step },
   data: () => ({
-    stage: 1
+    stage: 1,
   }),
   computed: {
     ...mapGetters([
@@ -126,7 +130,7 @@ export default {
       "getStartDate",
       "getPromoCodesDisplay",
       "getPromoCodes",
-      "getPaymentInfo"
+      "getPaymentInfo",
     ]),
     shouldWaiveAppFee() {
       // const validPromos = ["COVID19", "TAKE25", "PATHRISE"];
@@ -147,7 +151,7 @@ export default {
       return (
         this.routeHas("/enroll/complete") || this.routeHas("/enroll/admissions")
       );
-    }
+    },
   },
   methods: {
     routeHas(path) {
@@ -165,8 +169,8 @@ export default {
       const route = stages[this.stage];
       if (this.$route.path == route) return;
       return this.$router.push(route);
-    }
-  }
+    },
+  },
 };
 </script>
 

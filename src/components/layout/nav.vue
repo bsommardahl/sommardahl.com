@@ -6,7 +6,7 @@
       <img
         class="logo"
         src="img/logo/horizontal_logo.png"
-        alt="CodeX Academy Logo"
+        alt="Sommardahl Academy Logo"
       />
     </a>
     <button
@@ -113,7 +113,7 @@
           >
           <div class="dropdown-menu">
             <div class="nav-item">
-              <router-link to="/financing/codex" class="nav-link"
+              <router-link to="/financing/sommardahl" class="nav-link"
                 >Student Loans</router-link
               >
             </div>
@@ -196,10 +196,6 @@
           <div class="dropdown-menu">
             <div class="nav-item">
               <router-link to="/faqs" class="nav-link">FAQs</router-link>
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link to="/team" class="nav-link">Our Team</router-link>
             </div>
             <div class="dropdown-divider"></div>
             <div class="nav-item">

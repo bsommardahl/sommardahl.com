@@ -16,9 +16,13 @@
         <div class="col-md-6 col-lg-7">
           <div class>
             <h2>Everything the User Touches</h2>
-            <p
-              class
-            >As a Front-End Developer, you are the master of the user interface. Everything the user clicks, feels, sees and experiences is a result of your work in the front-end. Using technologies like HTML, CSS and Javascript, you build the interfaces that move our culture!</p>
+            <p class>
+              As a Front-End Developer, you are the master of the user
+              interface. Everything the user clicks, feels, sees and experiences
+              is a result of your work in the front-end. Using technologies like
+              HTML, CSS and Javascript, you build the interfaces that move our
+              culture!
+            </p>
           </div>
           <SalaryBlock
             :amount="76929"
@@ -27,9 +31,9 @@
           />
 
           <div class="mt-5 mb-5">
-            <h5>Every CodeX Academy program comes with:</h5>
+            <h5>Every Sommardahl Academy program comes with:</h5>
             <ul>
-              <li v-for="f in getBootcampFeatures" :key="f">{{f}}</li>
+              <li v-for="f in getBootcampFeatures" :key="f">{{ f }}</li>
             </ul>
           </div>
         </div>
@@ -53,7 +57,9 @@
     <div class="mt-5 pb-5 bg-lilac">
       <div class="container">
         <h2 class="text-center pt-5">Technologies you will Master</h2>
-        <h5 class="text-center mb-5">In the {{certification.name}} Certification</h5>
+        <h5 class="text-center mb-5">
+          In the {{ certification.name }} Certification
+        </h5>
         <Technologies :certification="certName" :includeName="true" />
 
         <div class="text-center">
@@ -82,13 +88,13 @@ import { mapCertificationToPlan } from "../../store/certifications";
 
 export default {
   data: () => ({
-    certName: FRONT_END_DEVELOPER
+    certName: FRONT_END_DEVELOPER,
   }),
   computed: {
     ...mapGetters(["getCertifications", "getBootcampFeatures", "getStartDate"]),
     certification() {
-      return this.getCertifications.find(x => x.name === FRONT_END_DEVELOPER);
-    }
+      return this.getCertifications.find((x) => x.name === FRONT_END_DEVELOPER);
+    },
   },
   components: {
     Hero,
@@ -98,7 +104,7 @@ export default {
     CertificationCard,
     DesignedByByron,
     Unsplash,
-    SalaryBlock
+    SalaryBlock,
   },
   methods: {
     certificationSelected(cert) {
@@ -107,8 +113,8 @@ export default {
         mapCertificationToPlan(cert, this.getStartDate)
       );
       this.$router.push("/enroll");
-    }
-  }
+    },
+  },
 };
 </script>
 

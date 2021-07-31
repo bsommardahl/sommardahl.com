@@ -18,15 +18,17 @@
           </p>
           <p class="card-text">
             We provide you with the learning methods, direction, structure and
-            curated community content. With our formula and your commitment
-            and time, you will learn to code!
+            curated community content. With our formula and your commitment and
+            time, you will learn to code!
           </p>
         </div>
         <div class="card-footer">
           <button
             class="btn btn-secondary"
             @click="$bvModal.show('modal-try-online-course')"
-          >Try an Online Course</button>
+          >
+            Try an Online Course
+          </button>
         </div>
       </div>
       <div>
@@ -35,11 +37,11 @@
           <div class="d-block">
             <p>
               The internet is
-              <strong>FULL</strong> of amazing content, determined to teach
-              you to code. CodeX Academy doesn't try to reinvent the wheel by
+              <strong>FULL</strong> of amazing content, determined to teach you
+              to code. CodeX Academy doesn't try to reinvent the wheel by
               creating more and more competing content. Instead, we curate the
-              best content and guide you through it like trail markers on a
-              hike through the woods.
+              best content and guide you through it like trail markers on a hike
+              through the woods.
             </p>
             <h4>Want to try an online course?</h4>
             <p>Here are a few that we really like:</p>
@@ -48,26 +50,34 @@
                 <a
                   href="https://www.udemy.com/course/devtools-2017-the-basics-of-chrome-developer-tools/"
                   target="_blank"
-                >Chrome Devtools</a>
+                  >Chrome Devtools</a
+                >
                 from Udemy
               </li>
               <li>
                 <a
                   href="https://www.udemy.com/course/devtools-2017-the-basics-of-chrome-developer-tools/"
                   target="_blank"
-                >Deploying Applications with Heroku</a>
+                  >Deploying Applications with Heroku</a
+                >
                 from Udacity
               </li>
               <li>
                 <a
                   href="https://www.theodinproject.com/courses/web-development-101"
                   target="_blank"
-                >Web Development</a>
+                  >Web Development</a
+                >
                 from The Odin Project
               </li>
             </ul>
           </div>
-          <b-button class="mt-3" block @click="$bvModal.hide('modal-try-online-course')">Close Me</b-button>
+          <b-button
+            class="mt-3"
+            block
+            @click="$bvModal.hide('modal-try-online-course')"
+            >Close Me</b-button
+          >
         </b-modal>
       </div>
     </div>
@@ -98,7 +108,9 @@
           <button
             class="btn btn-secondary"
             @click="$bvModal.show('modal-view-mentoring-session')"
-          >Watch a Mentoring Session</button>
+          >
+            Watch a Mentoring Session
+          </button>
         </div>
       </div>
       <div>
@@ -111,7 +123,8 @@
             class="mt-3"
             block
             @click="$bvModal.hide('modal-view-mentoring-session')"
-          >Close Me</b-button>
+            >Close Me</b-button
+          >
         </b-modal>
       </div>
     </div>
@@ -134,8 +147,8 @@
           </p>
 
           <p class="card-text">
-            Each learning pathway is made up of a number of milestones, each
-            one building on the other. After passing an evaluation at each
+            Each learning pathway is made up of a number of milestones, each one
+            building on the other. After passing an evaluation at each
             milestone, you will receive a micro-certification (a badge) that
             shows the world what you have proven you can do!
           </p>
@@ -144,12 +157,16 @@
           <button
             class="btn btn-secondary"
             @click.prevent="$bvModal.show('modal-earn-a-badge')"
-          >Earn Your First Badge</button>
+          >
+            Earn Your First Badge
+          </button>
         </div>
       </div>
       <div>
         <b-modal id="modal-earn-a-badge" hide-footer>
-          <template v-slot:modal-title>Chrome Dev Tools Learner 1 Badge</template>
+          <template v-slot:modal-title
+            >Chrome Dev Tools Learner 1 Badge</template
+          >
           <div class="d-block">
             <div class="float-right w-25">
               <img
@@ -158,8 +175,8 @@
               />
             </div>
             <p>
-              We thought you might like to earn a badge to see how it works.
-              You can do it in a few steps:
+              We thought you might like to earn a badge to see how it works. You
+              can do it in a few steps:
             </p>
             <ol>
               <li>
@@ -167,7 +184,8 @@
                 <a
                   href="https://badgr.com/public/badges/CwCMwmY-RIOhHS-KOb12oA"
                   target="_blank"
-                >badge criteria</a>
+                  >badge criteria</a
+                >
                 for the skills you need to master.
               </li>
               <li>
@@ -176,21 +194,26 @@
               </li>
               <li>
                 When you're ready,
-                <a
-                  href="http://evals.codex.academy/"
-                  target="_blank"
-                >request an evaluation</a>.
+                <a href="http://evals.sommardahl.com/" target="_blank"
+                  >request an evaluation</a
+                >.
               </li>
               <li>
                 <a
                   href="https://codex-badge-claim.herokuapp.com/badgeid/CwCMwmY-RIOhHS-KOb12oA"
                   target="_blank"
-                >Claim</a>
+                  >Claim</a
+                >
                 your first badge!
               </li>
             </ol>
           </div>
-          <b-button class="mt-3" block @click="$bvModal.hide('modal-earn-a-badge')">Close Me</b-button>
+          <b-button
+            class="mt-3"
+            block
+            @click="$bvModal.hide('modal-earn-a-badge')"
+            >Close Me</b-button
+          >
         </b-modal>
       </div>
     </div>
@@ -203,10 +226,9 @@ import Unsplash from "@/components/Unsplash";
 
 export default {
   components: {
-    Unsplash
-  }
+    Unsplash,
+  },
 };
 </script>
 
-<style>
-</style>
+<style></style>

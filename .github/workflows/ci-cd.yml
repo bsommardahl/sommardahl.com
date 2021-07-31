@@ -104,4 +104,4 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Perform smoke test
-        run: export TEST_URL=https://codex.academy && npm i && npm run smoke
+        run: export TEST_URL=https://sommardahl.com && npm i && npm run smoke

@@ -1,6 +1,6 @@
 <template>
   <div>
-    Loading...    
+    Loading...
   </div>
 </template>
 
@@ -15,9 +15,11 @@ export default {
     const international = this.$route.meta.international;
     if (international) {
       this.$store.dispatch("setPriceClass", "international");
-      this.$store.dispatch("setProgramTitle", "CodeX Academy International");
-    }
-    else{
+      this.$store.dispatch(
+        "setProgramTitle",
+        "Sommardahl Academy International"
+      );
+    } else {
       this.$store.dispatch("setPriceClass", false);
       this.$store.dispatch("setProgramTitle", false);
     }
@@ -27,5 +29,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

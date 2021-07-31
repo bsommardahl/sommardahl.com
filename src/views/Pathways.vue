@@ -5,14 +5,14 @@
       height="40vh"
     >
       <h2>How it Works</h2>
-      <h5>What makes CodeX Academy Tick?</h5>
+      <h5>What makes Sommardahl Academy Tick?</h5>
     </Hero>
     <div class="container mt-5 pt-5">
       <h1 class="text-center">Certification Pathways</h1>
       <p class="text-center">
-        CodeX Academy learners pass from level to level, accumulating knowledge,
-        skills and certifications. Each level builds on the previous and leads
-        to the next.
+        Sommardahl Academy learners pass from level to level, accumulating
+        knowledge, skills and certifications. Each level builds on the previous
+        and leads to the next.
       </p>
       <CurriculumCerts />
     </div>
@@ -26,7 +26,7 @@ import CurriculumCerts from "@/components/CurriculumCerts";
 export default {
   components: {
     Hero,
-    CurriculumCerts
+    CurriculumCerts,
   },
 };
 </script>

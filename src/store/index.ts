@@ -74,7 +74,7 @@ export default new Vuex.Store({
     paymentInfo: undefined,
     priceClass: undefined,
     activePlan: undefined,
-    source: "CodeX Academy April 2020",
+    source: "Sommardahl Academy April 2020",
     audience: "",
   },
   mutations: {
@@ -173,7 +173,8 @@ export default new Vuex.Store({
     },
   },
   getters: {
-    getActivePlan: (state): Plan => state.activePlan || "CodeX Academy Program",
+    getActivePlan: (state): Plan =>
+      state.activePlan || "Sommardahl Academy Program",
     getInternational: (state) => {
       if (state.priceClass) {
         return internationalPlans.filter(

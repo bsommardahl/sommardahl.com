@@ -7,19 +7,13 @@
     <div class="container">
       <div class="row justify-content-md-center text-center">
         <div class="col-12 col-md-2 mb-5">
-          <h4>CODEX Academy</h4>
+          <h4>Sommardahl Academy</h4>
           <p>
             <a href="#" @click.prevent="goHome">Home</a>
           </p>
 
           <p>
-            <router-link to="/team">Team</router-link>
-          </p>
-          <p>
             <router-link to="/faqs">FAQs</router-link>
-          </p>
-          <p>
-            <router-link to="/baas">Bootcamp as a Service</router-link>
           </p>
           <p>
             <router-link to="/contact">Contact Us</router-link>
@@ -27,56 +21,32 @@
         </div>
 
         <div class="col-12 col-md-2 mb-5">
-          <h4>Certifications</h4>
-          <p v-if="!isInternational">
+          <h4>Programs</h4>
+          <p>
             <router-link to="/programs">Overview</router-link>
           </p>
-          <p v-if="!isInternational">
-            <router-link to="/programs/front-end-developer" disabled
-              >Front-End Developer</router-link
+          <p>
+            <router-link to="/programs/driven" disabled
+              >Driven Developer</router-link
             >
           </p>
-          <p v-if="!isInternational">
-            <router-link to="/programs/full-stack-developer" disabled
-              >Full-Stack Developer</router-link
+          <p>
+            <router-link to="/programs/fellowship" disabled
+              >Fellowship</router-link
             >
           </p>
-          <p v-if="!isInternational">
-            <router-link to="/programs/full-stack-engineer" disabled
-              >Full-Stack Engineer</router-link
-            >
-          </p>
-          <p v-if="isInternational">
-            <router-link to="/programs/international"
-              >Monthly Plans</router-link
-            >
-          </p>
-          <p v-if="isInternational">
-            <router-link to="/programs/international"
-              >Light-Support</router-link
-            >
-          </p>
-          <p v-if="isInternational">
-            <router-link to="/programs/international"
-              >Medium-Support</router-link
-            >
-          </p>
-          <p v-if="isInternational">
-            <router-link to="/programs/international">High-Support</router-link>
+          <p>
+            <router-link to="/programs/events" disabled>Events</router-link>
           </p>
         </div>
 
-        <div class="col-12 col-md-2 mb-5" v-if="isInternational">
+        <div class="col-12 col-md-2 mb-5" v-if="!isInternational">
           <h4>Financial Aid</h4>
           <p>
             <router-link to="/financing/codex" class="nav-link"
               >Student Loans</router-link
             >
           </p>
-        </div>
-
-        <div class="col-12 col-md-2 mb-5" v-if="!isInternational">
-          <h4>Financing</h4>
           <p>
             <router-link to="/financial-aid">Deferred Payment</router-link>
           </p>
@@ -98,11 +68,6 @@
           <p>
             <router-link to="/howitworks#tech">Our Technologies</router-link>
           </p>
-          <p>
-            <router-link :to="{ path: '/howitworks', hash: '#internships' }"
-              >Internships</router-link
-            >
-          </p>
         </div>
 
         <div class="col col-md-2 mb-5">
@@ -121,18 +86,18 @@
     <div class="container">
       <div class="row justify-content-center text-center mt-5 mb-4">
         <div class="col-1">
-          <a href="https://facebook.com/codexacademyonline" target="_blank">
+          <a href="https://facebook.com/sommardahlacademy" target="_blank">
             <font-awesome-icon :icon="faFacebookSquare" class="fa-2x" />
           </a>
         </div>
         <div class="col-1">
-          <a href="https://twitter.com/Academycodex" target="_blank">
+          <a href="https://twitter.com/sommardahl" target="_blank">
             <font-awesome-icon :icon="faTwitterSquare" class="fa-2x" />
           </a>
         </div>
         <div class="col-1">
           <a
-            href="https://www.instagram.com/codexacademyonline/"
+            href="https://www.instagram.com/sommardahlacademy/"
             target="_blank"
           >
             <font-awesome-icon :icon="faInstagram" class="fa-2x" />
@@ -148,7 +113,7 @@
         </div>
       </div>
       <div class="text-center">
-        <p>Copyright &copy; CodeX Academy, LLC 2021</p>
+        <p>Copyright &copy; Sommardahl Academy LLC 2021</p>
       </div>
     </div>
     <!-- /.container -->
@@ -172,7 +137,7 @@ export default {
     faYoutubeSquare,
   }),
   computed: {
-    ...mapGetters(["isInternational"]),
+    ...mapGetters([""]),
   },
   methods: {
     goHome() {
@@ -184,8 +149,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-footer {
-}
 .text-white {
   h4 {
     color: white;

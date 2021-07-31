@@ -62,8 +62,8 @@
               you blazing past your classmates while they take some extra time.
             </li>
           </ul>
-          CodeX Academy believes a mastery-based approach is the best way to
-          learn the art of software development. Any other approach tends to
+          Sommardahl Academy believes a mastery-based approach is the best way
+          to learn the art of software development. Any other approach tends to
           exclude those who need more time and tends to hold back those who can
           move more quickly.
         </QAndA>
@@ -130,15 +130,15 @@
           question="What kind of instructors and mentors will I work with?"
         >
           <p>
-            CodeX Academy constantly searches the world for passionate, skilled
-            and experienced Full-Stack Developers to serve as mentors,
+            Sommardahl Academy constantly searches the world for passionate,
+            skilled and experienced Full-Stack Developers to serve as mentors,
             instructors and presenters. Each faculty member is recruited using a
             rigorous vetting process that verifies not only their skills but
             also their communication of thoughts and cultural fit with our
             school and students.
           </p>
           <p>
-            All faculty members are part-time with CodeX so that they can
+            All faculty members are part-time with Sommardahl so that they can
             continously refine their skills in their full-time development
             positions by day. Some faculty members hold university degrees.
             Other faculty members are self-taught engineers with years of wisdom
@@ -245,7 +245,7 @@
           <p>
             If this is on your mind, then you must really understand how a
             self-paced curriculum works! In a mastery-based program like we have
-            in CodeX Academy, learning is naturally self-paced. While we
+            in Sommardahl Academy, learning is naturally self-paced. While we
             wholeheartedly believe this is the BEST way to learn to code,
             self-paced programs also come with some natural pitfall or risks.
             One such risk is the possibility of getting behind and running out
@@ -272,8 +272,8 @@
             <b>Target Resets: </b> There may be scenarios where it is
             appropriate to adjust your target level so that you can finish on
             time with less pressure. Unlike universities or traditional programs
-            where "graduation" is the only meaningful achievement, CodeX Academy
-            provides numerous independently-valuable milestones called
+            where "graduation" is the only meaningful achievement, Sommardahl
+            Academy provides numerous independently-valuable milestones called
             "certifications". We have nine such certifications, each
             representing valuable and marketable sets of skills. Perhaps you
             originally set a goal of achieving level 6 (Full-Stack Developer),

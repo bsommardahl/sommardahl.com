@@ -11,7 +11,7 @@
       <!-- <div class="mt-5">
         <h2>Intense Intent and Direction</h2>
         <p class>
-          Looking for an intense, immersive learning experience? CodeX Academy
+          Looking for an intense, immersive learning experience? Sommardahl Academy
           has a few bootcamp options to choose from, depending on how far you
           want to go.
         </p>
@@ -59,7 +59,7 @@ export default {
     CertificationTable,
     Unsplash,
     Hero,
-    CertificationCard
+    CertificationCard,
   },
   computed: {
     ...mapGetters([
@@ -67,8 +67,8 @@ export default {
       "getBootcampFeatures",
       "getApplicant",
       "getStartDate",
-      "isInternational"
-    ])
+      "isInternational",
+    ]),
   },
   methods: {
     certificationSelected(cert) {
@@ -77,12 +77,12 @@ export default {
         mapCertificationToPlan(cert, this.getStartDate)
       );
       this.$router.push("/enroll");
-    }
+    },
   },
   mounted() {
     if (this.isInternational) {
       this.$router.push("/programs/international");
     }
-  }
+  },
 };
 </script>

@@ -8,9 +8,9 @@
       <div class="mt-5">
         <h2>Intense Intent and Direction</h2>
         <p class>
-          Looking for an intense, immersive learning experience? CodeX Academy
-          has a few bootcamp options to choose from, depending on how far you
-          want to go.
+          Looking for an intense, immersive learning experience? Sommardahl
+          Academy has a few bootcamp options to choose from, depending on how
+          far you want to go.
         </p>
         <p>
           Like our
@@ -44,10 +44,10 @@ export default {
     BootcampsTable,
     Unsplash,
     Hero,
-    MonthlyPlanTable
+    MonthlyPlanTable,
   },
   computed: {
-    ...mapGetters(["getBootcamps"])
-  }
+    ...mapGetters(["getBootcamps"]),
+  },
 };
 </script>

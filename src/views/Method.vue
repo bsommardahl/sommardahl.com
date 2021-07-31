@@ -2,7 +2,7 @@
   <!-- Page Content -->
   <div class="container">
     <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">CodeX Academy Method</h1>
+    <h1 class="mt-4 mb-3">Sommardahl Academy Method</h1>
 
     <ol class="breadcrumb">
       <li class="breadcrumb-item">
@@ -46,7 +46,7 @@ import MethodList from "@/components/MethodList";
 
 export default {
   components: {
-    MethodList
-  }
+    MethodList,
+  },
 };
 </script>

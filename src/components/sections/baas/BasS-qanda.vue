@@ -9,10 +9,10 @@
           question="Can I customize the program or include other activities in my boot camp?"
         >
           <p>
-            Absolutely, yes! CodeX Academy has a “formula” that works very well
-            for helping people learn to code, but you may have elements that
-            could enhance that experience and we welcome them! Further, you may
-            have activities you want to include that have nothing to do with
+            Absolutely, yes! Sommardahl Academy has a “formula” that works very
+            well for helping people learn to code, but you may have elements
+            that could enhance that experience and we welcome them! Further, you
+            may have activities you want to include that have nothing to do with
             coding, but help prepare your particular students for the future
             ahead of them. That is also very welcome!
           </p>
@@ -33,8 +33,8 @@
           <p>
             We suggest setting a start date for each cohort in your bootcamp to
             build anticipation and to give time for everyone to enroll and get
-            set up. The date is completely up to you as long as you give CodeX
-            Academy two weeks notice to get everything set up.
+            set up. The date is completely up to you as long as you give
+            Sommardahl Academy two weeks notice to get everything set up.
           </p>
         </QAndA>
 
@@ -58,17 +58,17 @@
           </p>
         </QAndA>
         <QAndA
-          id="faq-codex-ownership"
-          question="What part of my bootcamp does CodeX Academy own?"
+          id="faq-sommardahl-ownership"
+          question="What part of my bootcamp does Sommardahl Academy own?"
         >
           <p>
-            It’s very simple. If CodeX Academy faculty or staff creates
-            something, CodeX Academy owns it. For example, CodeX Academy
-            maintains rights to student records, micro-credentials,
+            It’s very simple. If Sommardahl Academy faculty or staff creates
+            something, Sommardahl Academy owns it. For example, Sommardahl
+            Academy maintains rights to student records, micro-credentials,
             certifications, modifications or additions to the competency
             library, pathways, process, the core framework, curation of learning
-            resources, and CodeX-created learning materials and content, just to
-            name a few things.
+            resources, and Sommardahl-created learning materials and content,
+            just to name a few things.
           </p>
         </QAndA>
 
@@ -87,12 +87,12 @@
           question="Can I have access to my students’ information?"
         >
           <p>
-            Yes, CodeX Academy is happy to share any of your students’ data
+            Yes, Sommardahl Academy is happy to share any of your students’ data
             points that we collect during the bootcamp.
           </p> </QAndA
         ><QAndA
           id="faq-enroll-normal-bootcamp"
-          question="Could my students just enroll in CodeX Academy without going through my
+          question="Could my students just enroll in Sommardahl Academy without going through my
         bootcamp?"
         >
           <p>

@@ -32,7 +32,7 @@
           />
 
           <div class="mt-5 mb-5">
-            <h5>Every CodeX Academy program comes with:</h5>
+            <h5>Every Sommardahl Academy program comes with:</h5>
             <ul>
               <li v-for="f in getBootcampFeatures" :key="f">{{ f }}</li>
             </ul>

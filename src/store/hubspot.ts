@@ -16,7 +16,7 @@ export async function sendToHubspot(
     submittedAt: Date.now(), // This millisecond timestamp is optional. Update the value from "1517927174000" to avoid an INVALID_TIMESTAMP error.
     fields,
     context: {
-      pageUri: "codex.academy/enroll",
+      pageUri: "sommardahl.com/enroll",
       pageName: "Application",
     },
     // legalConsentOptions: {

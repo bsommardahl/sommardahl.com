@@ -58,13 +58,13 @@
         </div>
         <div class="mt-3 col-10 col-md-6 col-lg-3">
           <p>
-            CodeX Academy now offers it’s comprehensive backend and framework
-            for an organization, club, or individual to launch their very own
-            boot camp. Your boot camp can follow CodeX Academy’s software
-            development pathways and curriculum, or you can bring your own
-            curriculum and learning materials. You can depend on CodeX Academy’s
-            amazing mentors and instructors, or you can bring your own (or
-            handle it yourself). CodeX Academy will handle the rest!
+            Sommardahl Academy now offers it’s comprehensive backend and
+            framework for an organization, club, or individual to launch their
+            very own boot camp. Your boot camp can follow Sommardahl Academy’s
+            software development pathways and curriculum, or you can bring your
+            own curriculum and learning materials. You can depend on Sommardahl
+            Academy’s amazing mentors and instructors, or you can bring your own
+            (or handle it yourself). Sommardahl Academy will handle the rest!
           </p>
         </div>
       </div>
@@ -72,13 +72,13 @@
       <!-- <div class="row">
         <div class="col">
           <p>
-            CodeX Academy has ongoing open enrollment for any student who wants
-            to join and begin learning. However, CodeX also provides individuals
+            Sommardahl Academy has ongoing open enrollment for any student who wants
+            to join and begin learning. However, Sommardahl also provides individuals
             and organizations with the chance to host their very own co-branded,
-            hosted and fully-customized boot camp using CodeX Academy’s
+            hosted and fully-customized boot camp using Sommardahl Academy’s
             established formula and framework as a back-end. Hosts can even earn
             revenue generated from boot camps by marking up tuition and covering
-            some of the daily or weekly tasks that CodeX staff would normally
+            some of the daily or weekly tasks that Sommardahl staff would normally
             perform. Boot camp hosts can take ownership of the boot camp
             including (but not limited to) customizing boot camp branding, name,
             curriculum, or daily schedule. Boot camp hosts can even add custom
@@ -122,9 +122,9 @@
         <div class="row justify-content-center">
           <h1 class="text-center">BaaS Framework</h1>
           <p class="col-8">
-            CodeX Academy's robust backend and framework takes the guess-work
-            out of running a bootcamp. Allow us to handle the logistics while
-            you focus on your students.
+            Sommardahl Academy's robust backend and framework takes the
+            guess-work out of running a bootcamp. Allow us to handle the
+            logistics while you focus on your students.
           </p>
           <div class="col-10">
             <BootcampFeatures />
@@ -143,10 +143,10 @@
         <div class="row justify-content-center">
           <h1 class="text-center">Additional Services</h1>
           <p class="col-10">
-            CodeX Academy boot camps are flexible enough for you to bring your
-            own program while we handle the logistics. But, you may want some
-            help with learning activities, mentoring, etc. We're glad to provide
-            you these services.
+            Sommardahl Academy boot camps are flexible enough for you to bring
+            your own program while we handle the logistics. But, you may want
+            some help with learning activities, mentoring, etc. We're glad to
+            provide you these services.
           </p>
           <div class="col-10">
             <AdditionalBootcampServices :services="services" />

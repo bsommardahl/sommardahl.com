@@ -1,7 +1,13 @@
 <template>
   <div class="pb-5">
     <Hero unsplashId="IgUR1iX0mqM" height="40vh">
-      <h2>{{ this.getProgramTitle ? this.getProgramTitle : "CodeX Academy International" }}</h2>
+      <h2>
+        {{
+          this.getProgramTitle
+            ? this.getProgramTitle
+            : "Sommardahl Academy International"
+        }}
+      </h2>
       <h5>Level up at your own pace</h5>
     </Hero>
     <div v-if="getApplicant" class="text-center bg-periwinkle pt-4 pb-4">
@@ -13,7 +19,7 @@
         <h2>Learning That Fits Your Needs</h2>
 
         <p class>
-          At CodeX Academy, we believe the WORLD will be a better place if YOU
+          At Sommardahl Academy, we believe the WORLD will be a better place if YOU
           are coding! Because of that, we strive to provide the most flexible
           options possible so that you have the best chance to learn.
         </p>
@@ -30,7 +36,11 @@
       </div>
 
       <div class="d-none d-md-block mt-3">
-        <MonthlyPlanTable :plans="getInternational" title="Monthly" @selected="selected" />
+        <MonthlyPlanTable
+          :plans="getInternational"
+          title="Monthly"
+          @selected="selected"
+        />
       </div>
     </div>
   </div>
@@ -50,23 +60,23 @@ export default {
     SelfPacedCards,
     Unsplash,
     Hero,
-    MonthlyPlanTable
+    MonthlyPlanTable,
   },
   computed: {
     ...mapGetters([
       "getInternational",
       "getStartDate",
       "getApplicant",
-      "getProgramTitle"
-    ])
+      "getProgramTitle",
+    ]),
   },
   methods: {
     selected(plan) {
       const mappedPlan = mapToActivePlan(plan, this.getStartDate);
       this.$store.dispatch("setActivePlan", mappedPlan);
       this.$router.push("/enroll");
-    }
-  }
+    },
+  },
 };
 </script>
 

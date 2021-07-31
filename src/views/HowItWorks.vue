@@ -1,23 +1,35 @@
 <template>
   <div>
-    <Hero :unsplashIds="['-fGqsewtsJY', 'u_RiRTA_TtY', 'xRDuEeG1TVI']" height="40vh">
+    <Hero
+      :unsplashIds="['-fGqsewtsJY', 'u_RiRTA_TtY', 'xRDuEeG1TVI']"
+      height="40vh"
+    >
       <h2>How it Works</h2>
-      <h5>What makes CodeX Academy Tick?</h5>
+      <h5>What makes Sommardahl Academy Tick?</h5>
     </Hero>
     <div class="container mt-5 pt-5">
-    
       <h1 class="text-center">Our 6 Pillars of Success</h1>
-      <h5 id="pillars" class="section-title mb-5">A direct path for learning to code</h5>
+      <h5 id="pillars" class="section-title mb-5">
+        A direct path for learning to code
+      </h5>
       <Pillars id="pillars" :pillars="getMethods" />
-      <!-- <h2 id="formula" class="section-title mt-5 mb-5">The CodeX Academy Formula</h2>
+      <!-- <h2 id="formula" class="section-title mt-5 mb-5">The Sommardahl Academy Formula</h2>
       <Formula />-->
 
-      <h1 id="curriculum" class="text-center mt-5">The CodeX Academy Curriculum</h1>
-      <h5 id="curriculum" class="section-title mb-5">Build Mastery from Level to Level</h5>
+      <h1 id="curriculum" class="text-center mt-5">
+        The Sommardahl Academy Curriculum
+      </h1>
+      <h5 id="curriculum" class="section-title mb-5">
+        Build Mastery from Level to Level
+      </h5>
       <CurriculumCerts />
 
-      <h1 id="timeline" class="text-center mt-5">Start Strong, Finish Stronger</h1>
-      <h5 id="curriculum" class="section-title mb-5">A Typical Learner Timeline</h5>
+      <h1 id="timeline" class="text-center mt-5">
+        Start Strong, Finish Stronger
+      </h1>
+      <h5 id="curriculum" class="section-title mb-5">
+        A Typical Learner Timeline
+      </h5>
       <Timeline />
 
       <h1 id="tech" class="text-center mt-5">Our Technologies and Tools</h1>
@@ -53,8 +65,8 @@ export default {
     CurriculumCerts,
     Pillars,
     Hero,
-    InternshipPartnersSection
-  }
+    InternshipPartnersSection,
+  },
 };
 </script>
 

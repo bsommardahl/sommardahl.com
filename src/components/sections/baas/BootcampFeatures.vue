@@ -88,7 +88,7 @@ export default {
       {
         name: "Curriculum Support",
         bullets: [
-          "Students are welcome to use CodeX Academy’s core full-stack",
+          "Students are welcome to use Sommardahl Academy’s core full-stack",
           "software development curriculum if desired.",
           "If you need help adapting your own curriculum or learning",
           "resources, we will provide assistance as needed.",

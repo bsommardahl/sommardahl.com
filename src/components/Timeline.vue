@@ -5,12 +5,12 @@
       side="right"
       title="Orientation"
       subtitle="A Few Hours"
-      extra="What should I expect after I enroll in CodeX Academy?"
+      extra="What should I expect after I enroll in Sommardahl Academy?"
     >
       <p>
         Starting with the right information will help ensure your long-term
-        success. As a new CodeX Academy learner, just minutes after signing up,
-        you will be able to:
+        success. As a new Sommardahl Academy learner, just minutes after signing
+        up, you will be able to:
       </p>
       <ul>
         <li>Learn how to access learning pathways and content</li>
@@ -23,11 +23,11 @@
       side="left"
       title="Mentor-Led Daily Progress"
       subtitle="12 to 24 Weeks"
-      extra="What is it like to learn coding with CodeX Academy? What's a typical day like?"
+      extra="What is it like to learn coding with Sommardahl Academy? What's a typical day like?"
     >
       <p>
-        Learning to code takes daily commitment. CodeX Academy gives you the
-        tools and support to stay engaged.
+        Learning to code takes daily commitment. Sommardahl Academy gives you
+        the tools and support to stay engaged.
       </p>
       <ul>
         <li>
@@ -47,13 +47,13 @@
       side="right"
       title="Certification"
       subtitle="A Few Hours"
-      extra="What will I have to show from my experience with CodeX Academy?"
+      extra="What will I have to show from my experience with Sommardahl Academy?"
     >
       <p>
         Certifications provide you with milestones that are within reach, but
         also prove to the rest of the world your achievements.
       </p>
-      <p>CodeX Academy has three major Certifications:</p>
+      <p>Sommardahl Academy has three major Certifications:</p>
       <ul>
         <li>Front-End Developer</li>
         <li>Full-Stack Developer</li>
@@ -70,11 +70,11 @@
       side="left"
       title="Internship"
       subtitle="12 to 24 Weeks"
-      extra="How does CodeX Academy help me land my first job as a software developer?"
+      extra="How does Sommardahl Academy help me land my first job as a software developer?"
     >
       <p>
-        CodeX Academy gives you access to resume-building internship, not as an
-        errand runner but as an actual software developer.
+        Sommardahl Academy gives you access to resume-building internship, not
+        as an errand runner but as an actual software developer.
       </p>
       <p>
         Depending on your certification level, you will be given the opportunity
@@ -114,7 +114,7 @@ import TimelineItem from "@/components/TimelineItem";
 const data = [
   { dateLabel: "Morning", title: "Independent Study" },
   { dateLabel: "Afternoon", title: "Meet with Mentor" },
-  { dateLabel: "Night", title: "Micro-Certification" }
+  { dateLabel: "Night", title: "Micro-Certification" },
 ];
 
 export default { components: { TimelineItem } };

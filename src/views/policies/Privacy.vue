@@ -3,9 +3,9 @@
     <h1>Privacy Policy</h1>
     <h5>GENERAL</h5>
     <p>
-      CodeX Academy, LLC. (“Company” or “we” or “us” or “our”) respects the
+      Sommardahl Academy, LLC. (“Company” or “we” or “us” or “our”) respects the
       privacy of its users (“user” or “you”) that use our website located at
-      www.codex.academy, including other media forms, media channels, mobile
+      www.sommardahl.com, including other media forms, media channels, mobile
       website or mobile application related or connected thereto (collectively,
       the “Website”). The following Company privacy policy (“Privacy Policy”) is
       designed to inform you, as a user of the Website, about the types of
@@ -467,13 +467,13 @@
     <h5>CONTACT</h5>
     <p>
       If you have any questions regarding our Privacy Policy, please contact our
-      Privacy Officer at: CodeX Academy LLC.
+      Privacy Officer at: Sommardahl Academy LLC.
     </p>
     <p>
       Attn: Privacy Officer
       <br />1612 Westgate Circle Suite 222. <br />Brentwood, Tn 37027
       <br />Email:
-      <a href="mailto:privacy@codex.academy">privacy@codex.academy</a>
+      <a href="mailto:privacy@sommardahl.com">privacy@sommardahl.com</a>
     </p>
   </div>
 </template>

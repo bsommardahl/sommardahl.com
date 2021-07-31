@@ -3,7 +3,7 @@
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">
       Contact
-      <!-- <small>CodeX Academy</small> -->
+      <!-- <small>Sommardahl Academy</small> -->
     </h1>
 
     <ol class="breadcrumb">
@@ -32,9 +32,8 @@
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
         <p>
-          CodeX Academy, LLC
-          <br />1612 Westgate Circle, Suite 222
-          <br />Brentwood, TN 37027
+          Sommardahl Academy LLC
+          <br />815 Banner Drive <br />Murfreesboro, TN 37129
         </p>
         <p>
           <span title="Phone">Phone:</span>
@@ -44,7 +43,7 @@
         <p>
           <span title="Email">Email:</span>
           <br />
-          <a href="mailto:contact@codex.academy">contact@codex.academy</a>
+          <a href="mailto:contact@sommardahl.com">contact@sommardahl.com</a>
         </p>
         <p>
           <span title="Hours">Hours:</span>
@@ -72,7 +71,7 @@ import HubspotForm from "@/components/HubspotForm";
 
 export default {
   components: {
-    HubspotForm
-  }
+    HubspotForm,
+  },
 };
 </script>

@@ -12,7 +12,7 @@
             <Logo color="white" :width="150" class="landing-logo mb-3" />
             <div class>
               <h3 class="text-left action">Beat the Heat, Learn to Code</h3>
-              <h1 class="text-left action">CodeX Camp</h1>
+              <h1 class="text-left action">Sommardahl Camp</h1>
             </div>
             <div class="checklist">
               <div class="item">
@@ -107,13 +107,13 @@
 
     <div class="pt-5 pb-5 bg-periwinkle">
       <div class="container">
-        <h2 class="text-center mb-5">What's the 411 on CodeX Camp?</h2>
+        <h2 class="text-center mb-5">What's the 411 on Sommardahl Camp?</h2>
         <div class="row">
           <div class="col-12 col-md-6">
             <p>
-              CodeX Academy presents "CodeX Camp", a remote summer day-camp for
-              kids designed to teach them how to code and create web
-              applications.
+              Sommardahl Academy presents "Sommardahl Camp", a remote summer
+              day-camp for kids designed to teach them how to code and create
+              web applications.
             </p>
 
             <ul>
@@ -144,7 +144,7 @@
             </ul>
             <p>
               If you answer yes to these questions, you can probably handle
-              CodeX Camp.
+              Sommardahl Camp.
             </p>
           </div>
         </div>
@@ -152,8 +152,8 @@
     </div>
 
     <div class="container mt-5 mb-5">
-      <h2 class="text-center">What Happens at CodeX Camp</h2>
-      <h5 class="text-center mb-5">A day in the life of a CodeX Camper</h5>
+      <h2 class="text-center">What Happens at Sommardahl Camp</h2>
+      <h5 class="text-center mb-5">A day in the life of a Sommardahl Camper</h5>
       <CampDayTimeline />
     </div>
 
@@ -167,7 +167,7 @@
     <TestimonialsSection />
 
     <div class="container mt-5 mb-5">
-      <h2 class="text-center">CodeX Academy is more than Camp</h2>
+      <h2 class="text-center">Sommardahl Academy is more than Camp</h2>
       <h5 class="text-center">Check out the links below</h5>
     </div>
   </div>
@@ -209,7 +209,9 @@ export default {
   data: () => ({
     hasApplied: false,
   }),
-  computed: { ...mapGetters(["getMethods", "getApplicant", "getPromoCodesDisplay"]) },
+  computed: {
+    ...mapGetters(["getMethods", "getApplicant", "getPromoCodesDisplay"]),
+  },
   methods: {
     async startApplication(applicant) {
       await this.$store.dispatch("startApplication", {
@@ -224,9 +226,9 @@ export default {
 
       const campPlan = {
         id: "camp2020",
-        name: "CodeX Camp 2020",
+        name: "Sommardahl Camp 2020",
         description:
-          'CodeX Academy presents "CodeX Camp", a remote summer day-camp for kids designed to teach them how to code and create web applications.',
+          'Sommardahl Academy presents "Sommardahl Camp", a remote summer day-camp for kids designed to teach them how to code and create web applications.',
         startDate,
         studyHours: 20,
         totalStudyHours: 20,
