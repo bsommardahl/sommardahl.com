@@ -1,5 +1,8 @@
 import LandingContainer from "../views/landing/LandingContainer.vue";
-import NSCC from "../views/landing/nscc.vue";
+import CoachingLandingAug2021 from "../views/landing/CoachingLandingAug2021.vue";
+import PodcastLandingAug2021 from "../views/landing/PodcastLandingAug2021.vue";
+import FellowshipLandingAug2021 from "../views/landing/FellowshipLandingAug2021.vue";
+import EventsAug2021 from "../views/landing/EventsAug2021.vue";
 import URL_Builder from "../views/url-builder.vue";
 import Home from "../views/Home.vue";
 import Loading from "../views/landing/Loading.vue";
@@ -11,12 +14,36 @@ const routes: Array<any> = [
     component: Home,
   },
   {
-    path: "/nscc",
-    name: "NSCC",
-    component: NSCC,
-    meta: {
-      layout: "no-nav",
-    },
+    path: "/programs/coaching",
+    name: "Coaching Program",
+    component: CoachingLandingAug2021,
+    // meta: {
+    //   layout: "no-nav",
+    // },
+  },
+  {
+    path: "/programs/podcast",
+    name: "Podcast",
+    component: PodcastLandingAug2021,
+    // meta: {
+    //   layout: "no-nav",
+    // },
+  },
+  {
+    path: "/programs/fellowship",
+    name: "Fellowship",
+    component: FellowshipLandingAug2021,
+    // meta: {
+    //   layout: "no-nav",
+    // },
+  },
+  {
+    path: "/events",
+    name: "Events",
+    component: EventsAug2021,
+    // meta: {
+    //   layout: "no-nav",
+    // },
   },
   {
     path: "/url",
@@ -31,71 +58,6 @@ const routes: Array<any> = [
     meta: {
       layout: "no-nav",
     },
-  },
-
-  // OLD ROUTES
-  {
-    path: "/landing",
-    name: "Landing",
-    component: LandingContainer,
-    children: [
-      {
-        path: "202004s",
-        component: Loading,
-        meta: { layout: "no-navbar" },
-      },
-      {
-        path: "202004",
-        meta: { layout: "no-navbar" },
-        component: Loading,
-      },
-      {
-        path: "in202005",
-        component: Loading,
-        meta: {
-          layout: "no-navbar",
-          source: "none",
-          international: true,
-        },
-      },
-      {
-        path: "camp202005",
-        component: Loading,
-        meta: { layout: "no-navbar" },
-      },
-      {
-        path: "int202005",
-        component: Loading,
-        meta: {
-          source: "none",
-          international: true,
-        },
-      },
-      {
-        path: "talently202008",
-        component: Loading,
-        meta: {
-          source: "talently",
-          international: true,
-        },
-      },
-      {
-        path: "pathrise1202008",
-        component: Loading,
-        meta: {
-          source: "pathrise",
-          international: false,
-        },
-      },
-      {
-        path: "pathriseint1202008",
-        component: Loading,
-        meta: {
-          source: "pathrise",
-          international: true,
-        },
-      },
-    ],
   },
 ];
 export default routes;

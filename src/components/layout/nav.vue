@@ -30,15 +30,7 @@
         <li class="nav-item">
           <a href="#" @click.prevent="goHome" class="nav-link">Home</a>
         </li>
-        <li class="nav-item">
-          <router-link
-            v-if="isInternational"
-            to="/programs/international"
-            class="nav-link"
-            >Monthly Plans</router-link
-          >
-        </li>
-        <li class="nav-item dropdown" v-if="!isInternational">
+        <li class="nav-item dropdown">
           <a
             href="#"
             class="nav-link dropdown-toggle"
@@ -52,7 +44,7 @@
           <div class="dropdown-menu">
             <div class="nav-item">
               <router-link to="/programs/podcast" class="nav-link"
-                >The Driven Dev Podcast</router-link
+                >Podcast</router-link
               >
             </div>
             <div class="dropdown-divider"></div>
@@ -67,10 +59,6 @@
                 >Fellowship</router-link
               >
             </div>
-            <!-- <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link to="/programs" class="nav-link">Compare</router-link>
-            </div> -->
           </div>
         </li>
 
@@ -91,7 +79,7 @@
           >
           <div class="dropdown-menu">
             <div class="nav-item">
-              <router-link :to="{ path: '/howitworks' }" class="nav-link"
+              <router-link :to="{ path: '/byron' }" class="nav-link"
                 >Byron's Story</router-link
               >
             </div>
@@ -101,23 +89,21 @@
                 >Process</router-link
               >
             </div>
-            <div class="dropdown-divider"></div>
+            <!-- <div class="dropdown-divider"></div>
             <div class="nav-item">
-              <router-link
-                :to="{ path: '/howitworks', hash: '#curriculum' }"
-                class="nav-link"
+              <router-link :to="{ path: '/contact' }" class="nav-link"
                 >Contact</router-link
               >
-            </div>
+            </div> -->
           </div>
         </li>
 
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <SelectPlanButton
             text="Join Now"
             buttonClass="btn btn-primary btn-block nav-link"
           />
-        </li>
+        </li> -->
       </ul>
     </div>
     <!-- </div> -->

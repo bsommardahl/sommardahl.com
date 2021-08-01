@@ -1,7 +1,7 @@
 <template>
   <form @submit.prevent="submitForm">
     <div class="form-label-group">
-      <label for="inputUserName">Applicant Name</label>
+      <label for="inputUserName">Name</label>
       <input
         type="text"
         name="name"
@@ -37,10 +37,10 @@
       />
     </div>-->
 
-    <div class="form-label-group" v-if="hasPromoCode">
+    <!-- <div class="form-label-group" v-if="hasPromoCode">
       <label for="promoCode">Promo Code</label>
       <input class="form-control" v-model="promoCode" />
-    </div>
+    </div> -->
 
     <!-- <div class="form-label-group">
       <label for="inputPassword">Desired Start Date</label>
@@ -52,7 +52,7 @@
       />
     </div>-->
 
-    <div class="form-label-group" v-if="offerFinancialAid">
+    <!-- <div class="form-label-group" v-if="offerFinancialAid">
       <label for="inputPassword">Financial Aid</label>
 
       <div class="form-check financial-aid" v-if="offerFinancialAid">
@@ -66,7 +66,7 @@
           >I want financial aid.</label
         >
       </div>
-    </div>
+    </div> -->
 
     <div class="cta">
       <button class="btn btn-lg btn-cta btn-block text-uppercase" type="submit">

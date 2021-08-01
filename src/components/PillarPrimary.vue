@@ -2,7 +2,7 @@
   <div class="card text-center pillar-primary shadow h-100">
     <div class="card-header">
       <div class="icon-keystone">
-        <font-awesome-icon :icon="icon" />
+        <Icon :name="icon" color="#EEEEEE" :size="50" />
       </div>
       <div class="pillar-title rainbow">{{ title }}</div>
       <div class="pillar-subtitle">{{ subtitle }}</div>
@@ -14,15 +14,15 @@
 </template>
 
 <script>
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import Icon from "@/components/Icon.vue";
 
 export default {
   props: {
-    icon: Object,
+    icon: String,
     title: String,
-    subtitle: String
+    subtitle: String,
   },
-  components: { FontAwesomeIcon }
+  components: { Icon },
 };
 </script>
 
@@ -30,7 +30,7 @@ export default {
 @import "@/variables";
 
 .pillar-primary {
-  width: 330px;
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
   .card-header {
@@ -40,7 +40,7 @@ export default {
   }
 
   .pillar-title {
-    margin-top: 10px;
+    margin-top: 20px;
     text-transform: uppercase;
     font-weight: bolder;
     // margin-bottom: 5px;
@@ -70,8 +70,8 @@ export default {
     border-radius: 50%;
     background-color: $navyBlue;
     position: absolute;
-    top: -20px;
-    left: 143px;
+    top: -33px;
+    left: 113px;
     padding: 12px;
 
     svg {

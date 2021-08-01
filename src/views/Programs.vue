@@ -67,7 +67,6 @@ export default {
       "getBootcampFeatures",
       "getApplicant",
       "getStartDate",
-      "isInternational",
     ]),
   },
   methods: {
@@ -79,10 +78,6 @@ export default {
       this.$router.push("/enroll");
     },
   },
-  mounted() {
-    if (this.isInternational) {
-      this.$router.push("/programs/international");
-    }
-  },
+  mounted() {},
 };
 </script>

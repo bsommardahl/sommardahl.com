@@ -208,7 +208,6 @@ export default new Vuex.Store({
     getPaymentTypes: () => paymentTypes,
     getPaymentInfo: (state) => state.paymentInfo,
     getCountries: () => countries.filter((x: any) => x.country.length < 25),
-    isInternational: (state) => state.priceClass === "international",
     getPriceClass: (state) => state.priceClass,
     getSource: (state) => state.source,
     getProgramTitle: (state) => state.programTitle,

@@ -9,31 +9,11 @@
 </template>
 
 <script>
-import LandingContainer from "../views/landing/LandingContainer.vue";
-import HomeApril2020 from "../views/landing/HomeApril2020.vue";
-import CollegeFEMay2021 from "../views/landing/CollegeFEMay2021.vue";
-import CollegeFSDMay2021 from "../views/landing/CollegeFSDMay2021.vue";
-import StudentApril2020 from "../views/landing/StudentApril2020.vue";
-import IndiaMay2020 from "../views/landing/IndiaMay2020.vue";
-import SummerCampMay2020 from "../views/landing/SummerCampMay2020.vue";
-import InternationalMay2020 from "../views/landing/InternationalMay2020.vue";
-import TalentlyAug2020 from "../views/landing/TalentlyAug2020.vue";
-import PathriseAug2020 from "../views/landing/PathriseAug2020.vue";
-import InternationalPathriseAug2020 from "../views/landing/InternationalPathriseAug2020.vue";
 import LevelUpOct2020 from "../views/landing/LevelUpOct2020.vue";
-import LevelUpInternationalOct2020 from "../views/landing/LevelUpInternationalOct2020.vue";
 
 export default {
   components: {
-    HomeApril2020,
-    CollegeFEMay2021,
-    CollegeFSDMay2021,
-    InternationalMay2020,
-    TalentlyAug2020,
-    PathriseAug2020,
-    InternationalPathriseAug2020,
     LevelUpOct2020,
-    LevelUpInternationalOct2020,
   },
   data() {
     return {

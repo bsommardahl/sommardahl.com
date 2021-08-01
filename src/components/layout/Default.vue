@@ -5,7 +5,9 @@
       <navHeader />
     </div>
     <slot />
-    <Footer />
+    <div class="mt-5">
+      <Footer />
+    </div>
   </div>
 </template>
 

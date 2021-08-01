@@ -26,8 +26,11 @@
             <router-link to="/programs">Overview</router-link>
           </p>
           <p>
-            <router-link to="/programs/driven" disabled
-              >Driven Developer</router-link
+            <router-link to="/programs/podcast" disabled>Podcast</router-link>
+          </p>
+          <p>
+            <router-link to="/programs/coaching" disabled
+              >Coaching Program</router-link
             >
           </p>
           <p>
@@ -36,11 +39,11 @@
             >
           </p>
           <p>
-            <router-link to="/programs/events" disabled>Events</router-link>
+            <router-link to="/events" disabled>Events</router-link>
           </p>
         </div>
 
-        <div class="col-12 col-md-2 mb-5" v-if="!isInternational">
+        <!-- <div class="col-12 col-md-2 mb-5">
           <h4>Financial Aid</h4>
           <p>
             <router-link to="/financing/sommardahl" class="nav-link"
@@ -53,21 +56,21 @@
           <p>
             <router-link to="/isa">Income Sharing</router-link>
           </p>
-        </div>
+        </div> -->
         <div class="col-12 col-md-2 mb-5">
           <h4>About Us</h4>
           <p>
-            <router-link to="/howitworks">How It Works</router-link>
+            <router-link to="/byron">Byron's Story</router-link>
           </p>
           <p>
-            <router-link to="/howitworks#curriculum">Curriculum</router-link>
+            <router-link to="/process">Process</router-link>
           </p>
-          <p>
+          <!-- <p>
             <router-link to="/howitworks#timeline">Timeline</router-link>
           </p>
           <p>
             <router-link to="/howitworks#tech">Our Technologies</router-link>
-          </p>
+          </p> -->
         </div>
 
         <div class="col col-md-2 mb-5">

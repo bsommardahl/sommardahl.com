@@ -2,7 +2,7 @@
   <div>
     <Hero
       class="level-up-landing-hero"
-      :unsplashIds="['vdXMSiX-n6M', 'Qg-r7OxZN7A', 'YK0HPwWDJ1I']"
+      :unsplashIds="['gTs2w7bu3Qo', '49UXHs41UPI', 'G1N9kDHqBrQ']"
       height="100vh"
       backgroundColor="rgba(25, 32, 71,0.7)"
     >
@@ -11,38 +11,39 @@
           <div class="col my-auto big-message">
             <Logo color="white" :width="150" class="landing-logo mb-3" />
             <div class>
-              <h3 class="text-left action">Find your drive</h3>
-              <h1 class="text-left action">Level-up your game</h1>
-              <h3 class="text-left action">Land a promotion</h3>
+              <h3 class="text-left action">Level-up your game</h3>
+              <h1 class="text-left action">Find your Drive</h1>
+              <h3 class="text-left action">Earn Seniority</h3>
             </div>
             <div class="checklist">
-              <div class="title">We'll help you do it!</div>
-              <div class="item">
-                <Icon name="checkbox" />
-                <span>Modern, Marketable Skills</span>
+              <div class="title">
+                Join the coaching program and make it happen!
               </div>
               <div class="item">
                 <Icon name="checkbox" />
-                <span>Live Mentoring Sessions</span>
+                <span>Weekly Sessions</span>
               </div>
               <div class="item">
                 <Icon name="checkbox" />
-                <span>100% Online</span>
+                <span>Goals and Assessments</span>
               </div>
               <div class="item">
                 <Icon name="checkbox" />
-                <span>Any Experience Level</span>
+                <span>Like-Minded Community</span>
+              </div>
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Any Skill Level</span>
               </div>
             </div>
           </div>
 
-          <div class="col-5 d-none d-lg-block my-auto">
+          <div class="col-5 d-none d-lg-block my-auto apply">
             <div class="start-application-form" v-if="!hasApplied">
-              <h5 class="card-title text-center">Sign Up Today</h5>
+              <h5 class="card-title text-center">Developer Coaching Program</h5>
               <StartApplicationForm
-                @submitted="startApplication"
-                :hasPromoCode="getPromoCodesDisplay"
-                :offerFinancialAid="true"
+                @submitted="startCoachingApplication"
+                submitButtonLabel="Start Membership"
               />
             </div>
             <Thanks v-if="hasApplied" @startOver="clearApplicant" />
@@ -56,11 +57,10 @@
       <div class="row justify-content-center">
         <div class="col-10 bg-periwinkle shadow border p-4">
           <div class="start-application-form" v-if="!hasApplied">
-            <h2 class="card-title text-center">Get Started Learning</h2>
+            <h2 class="card-title text-center">Developer Coaching Program</h2>
             <StartApplicationForm
               @submitted="startApplication"
-              :hasPromoCode="getPromoCodesDisplay"
-              :offerFinancialAid="true"
+              submitButtonLabel="Start Membership"
             />
           </div>
           <Thanks v-if="hasApplied" @startOver="clearApplicant" />
@@ -69,13 +69,78 @@
       </div>
     </div>
 
-    <StatsSection />
-
-    <CommercialSection />
-
-    <TechSection />
-
-    <TestimonialsSection />
+    <div class="container mt-5">
+      <div class="text-center">
+        <h1>Find your drive</h1>
+        <h4>at any commitment level</h4>
+      </div>
+      <div class="row mt-5 justify-content-center">
+        <div class="col col-md-6 col-lg-4 mb-5">
+          <PillarPrimary
+            title="Podcast"
+            subtitle="The Driven Developer"
+            icon="podcast"
+          >
+            <p class="pillar-text">
+              Weekly shows for your commute that keep you focused on the prize.
+            </p>
+            <div class="text-center mt-5">
+              <router-link to="programs/podcast" class="btn btn-lg btn-primary"
+                >Start Listening</router-link
+              >
+              <p class="mt-3">
+                <router-link to="programs/podcast" class=""
+                  >Learn More</router-link
+                >
+              </p>
+            </div>
+          </PillarPrimary>
+        </div>
+        <div class="col col-md-6 col-lg-4 mb-5">
+          <PillarPrimary
+            title="Coaching"
+            subtitle="Coaching Program"
+            icon="mentorscreen"
+          >
+            <p class="pillar-text">
+              Coaching and accountability program for those who are serious
+              about leveling up.
+            </p>
+            <div class="text-center mt-5">
+              <a @click="goto('apply')" class="btn btn-lg btn-primary"
+                >Start Membership</a
+              >
+              <p class="mt-3">
+                <router-link to="programs/coaching" class=""
+                  >Learn More</router-link
+                >
+              </p>
+            </div>
+          </PillarPrimary>
+        </div>
+        <div class="col col-md-6 col-lg-4 mb-5">
+          <PillarPrimary
+            title="Fellowship"
+            subtitle="Mentorship Program"
+            icon="hands"
+          >
+            <p class="pillar-text">
+              Accellerated growth through mentorship and constant feedback.
+            </p>
+            <div class="text-center mt-5">
+              <a @click="startAssessment()" class="btn btn-lg btn-primary"
+                >Start Assessment</a
+              >
+              <p class="mt-3">
+                <router-link to="programs/fellowship" class=""
+                  >Learn More</router-link
+                >
+              </p>
+            </div>
+          </PillarPrimary>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -87,12 +152,14 @@ import { mapGetters } from "vuex";
 import Icon from "@/components/Icon";
 import Logo from "@/components/Logo";
 import PartneringWith from "@/components/PartneringWith";
-import SelectPlanButton from "@/components/SelectPlanButton";
+import DesignedByByron from "@/components/DesignedByByron";
 import PromoAppFeeWaived from "@/components/PromoAppFeeWaived";
 import TechSection from "@/components/sections/tech";
 import CommercialSection from "@/components/sections/CommercialSection";
 import StatsSection from "@/components/sections/StatsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import QandASection from "@/components/sections/QandASection";
+import PillarPrimary from "@/components/PillarPrimary";
 
 export default {
   components: {
@@ -108,6 +175,9 @@ export default {
     StatsSection,
     TestimonialsSection,
     CommercialSection,
+    DesignedByByron,
+    QandASection,
+    PillarPrimary,
   },
   data: () => ({
     hasApplied: false,
@@ -129,8 +199,43 @@ export default {
       this.hasApplied = true;
       this.$router.push("/findplan");
     },
+    async startCoachingApplication(applicant) {
+      // const price = getSku(this).price || this.certification.price;
+      // await this.$store.dispatch("startApplication", {
+      //   applicant: {
+      //     ...applicant,
+      //     program_name: "Front-End Developer",
+      //     program_price: price,
+      //   },
+      // });
+      // await this.$store.dispatch("setStartDate", applicant.startDate);
+      this.hasApplied = true;
+
+      const { email, firstName, lastName } = applicant;
+      const url = `https://docs.google.com/forms/d/e/1FAIpQLSeEXPST7tmTuflfGVckpPpeVaSM4MzWQlWDqA56kZwWk_g3DQ/viewform?usp=pp_url&entry.879340931=${encodeURI(
+        firstName
+      )}&entry.1375086099=${encodeURI(lastName)}&entry.1204421148=${encodeURI(
+        email
+      )}`;
+      location.href = url;
+    },
+    async startAssessment() {
+      const url = `https://docs.google.com/forms/d/e/1FAIpQLScP1A4OFO1Wv1C6ja23-w9vnpDO8dxt9nPI98VsPgbOS4fyDw/viewform?usp=sf_link`;
+      location.href = url;
+    },
     clearApplicant() {
       this.hasApplied = false;
+    },
+    goto(el) {
+      function isHidden(el) {
+        return el.offsetParent === null;
+      }
+
+      let element = document.getElementsByClassName(el);
+      element.forEach((e) => {
+        if (!isHidden(e))
+          e.scrollIntoView({ behavior: "smooth", block: "end" });
+      });
     },
   },
   mounted() {
@@ -142,6 +247,10 @@ export default {
 
 <style lang="scss">
 @import "@/variables";
+
+.pillar-text {
+  min-height: 100px;
+}
 
 .level-up-landing-hero {
   .thanks-box {

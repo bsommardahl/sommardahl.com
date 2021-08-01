@@ -100,7 +100,7 @@ export default {
     color: white;
     padding: 0px;
     max-width: 80vw;
-    margin: 0px auto;
+    margin: auto auto;
     font-size: 5em;
   }
   h2 {
