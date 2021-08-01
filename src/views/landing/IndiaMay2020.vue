@@ -52,7 +52,8 @@
             <router-link
               class="btn btn-lg btn-primary mt-5"
               to="/programs/international"
-            >Select a Monthly Plan</router-link>
+              >Select a Monthly Plan</router-link
+            >
             <!-- </div> -->
 
             <!-- <Promo25OffMonthly style="max-width: 450px;" class="mt-5" /> -->
@@ -80,7 +81,8 @@
       <router-link
         class="btn btn-lg btn-primary mt-5"
         to="/programs/international"
-      >Select a Monthly Plan</router-link>
+        >Select a Monthly Plan</router-link
+      >
     </div>
 
     <CommercialSection />
@@ -89,7 +91,8 @@
       <router-link
         class="btn btn-lg btn-primary mt-5"
         to="/programs/international"
-      >Select a Monthly Plan</router-link>
+        >Select a Monthly Plan</router-link
+      >
     </div>
 
     <TechSection />
@@ -99,7 +102,8 @@
       <router-link
         class="btn btn-lg btn-primary mt-5"
         to="/programs/international"
-      >Select a Monthly Plan</router-link>
+        >Select a Monthly Plan</router-link
+      >
     </div>
   </div>
 </template>
@@ -130,16 +134,21 @@ export default {
     TechSection,
     StatsSection,
     TestimonialsSection,
-    CommercialSection
+    CommercialSection,
   },
   data: () => ({
-    hasApplied: false
+    hasApplied: false,
   }),
-  computed: { ...mapGetters(["getMethods", "getApplicant", "getPromoCodesDisplay"]) },
+  computed: {
+    ...mapGetters(["getMethods", "getApplicant", "getPromoCodesDisplay"]),
+  },
   methods: {
     async startApplication(applicant) {
       await this.$store.dispatch("startApplication", {
-        applicant: { ...applicant, source: this.$store.getters.getSource || "India May 2020" }
+        applicant: {
+          ...applicant,
+          source: this.$store.getters.getSource || "India May 2020",
+        },
       });
       await this.$store.dispatch("setStartDate", applicant.startDate);
       this.hasApplied = true;
@@ -147,15 +156,15 @@ export default {
     },
     clearApplicant() {
       this.hasApplied = false;
-    }
+    },
   },
   mounted() {
     const applicant = this.getApplicant;
     this.hasApplied = applicant;
     this.$store.dispatch("setPriceClass", "international");
     this.$store.dispatch("setHomepage", this.$route.fullPath);
-    this.$store.dispatch("setProgramTitle", "CodeX Academy India");
-  }
+    this.$store.dispatch("setProgramTitle", "Sommardahl Academy India");
+  },
 };
 </script>
 

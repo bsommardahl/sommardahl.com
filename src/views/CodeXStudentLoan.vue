@@ -5,11 +5,16 @@
       <h5>We've got you covered</h5>
     </Hero>
     <div class="container mt-5">
-      <h1 class="section-title">Tuition Financing from CodeX Academy</h1>
+      <h1 class="section-title">Tuition Financing from Sommardahl Academy</h1>
 
-      <p
-        class="mb-5 text-center"
-      >CodeX Academy offers the following loan terms to help those who need smaller payments and to spread their tuition out over time. This loan is offered at 0% interest for the life of the loan. If you choose this option, we ask that you pay the first payment of $500 up front. Afterwards, an admissions counselor will reach out with more specific loan terms.</p>
+      <p class="mb-5 text-center">
+        Sommardahl Academy offers the following loan terms to help those who
+        need smaller payments and to spread their tuition out over time. This
+        loan is offered at 0% interest for the life of the loan. If you choose
+        this option, we ask that you pay the first payment of $500 up front.
+        Afterwards, an admissions counselor will reach out with more specific
+        loan terms.
+      </p>
 
       <div class="row mx-auto">
         <div class="col-12 col-md-4" v-for="r in reasons" :key="r.title">
@@ -58,7 +63,7 @@ export default {
     SampleLoan,
     SelectPlanButton,
     Hero,
-    Money
+    Money,
   },
   data: () => ({
     reasons: [
@@ -66,18 +71,18 @@ export default {
         title: "Safe and Fast",
         icon: "tv",
         description:
-          "Online Application. Pre-approval in minutes. Applying does not affect credit score."
+          "Online Application. Pre-approval in minutes. Applying does not affect credit score.",
       },
       {
         title: "0% Interest",
         icon: "percent",
-        description: "Pay no interest for the life of the loan."
+        description: "Pay no interest for the life of the loan.",
       },
       {
         title: "Easy Payments",
         icon: "dollar-sign",
-        description: "Low monthly payments as you pay off your loan."
-      }
+        description: "Low monthly payments as you pay off your loan.",
+      },
     ],
     sampleData: [
       {
@@ -85,28 +90,28 @@ export default {
         content: "$9,000",
         footnote: "1",
         footnoteText:
-          "Finance up to tuition. The minimum loan amount is $3,000 or max loan if below $3,000."
+          "Finance up to tuition. The minimum loan amount is $3,000 or max loan if below $3,000.",
       },
       {
         title: "Term (months)",
         content: "18",
         footnote: "2",
         footnoteText:
-          "Sample 18-month term includes 18 months of principal payments. Terms vary by program."
+          "Sample 18-month term includes 18 months of principal payments. Terms vary by program.",
       },
       {
         title: "Interest Rate",
         content: "0%",
         footnote: "3",
-        footnoteText: "Interest rate is 0%, really. No strings attached."
+        footnoteText: "Interest rate is 0%, really. No strings attached.",
       },
       {
         title: "Monthly Payment",
         content: "$500",
-        footnote: ""
-      }
-    ]
-  })
+        footnote: "",
+      },
+    ],
+  }),
 };
 </script>
 

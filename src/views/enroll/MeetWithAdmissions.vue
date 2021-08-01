@@ -13,9 +13,10 @@
       </p>
       <p>
         <a
-          href="https://meetings.hubspot.com/christian253/codex-academy-program-selection"
+          href="https://meetings.hubspot.com/christian253/sommardahl-academy-program-selection"
           class="btn btn-primary"
-        >Schedule a Meeting</a>
+          >Schedule a Meeting</a
+        >
       </p>
     </div>
   </div>
@@ -25,8 +26,8 @@
 import { mapGetters } from "vuex";
 export default {
   computed: {
-    ...mapGetters(["getActivePlan"])
-  }
+    ...mapGetters(["getActivePlan"]),
+  },
 };
 </script>
 

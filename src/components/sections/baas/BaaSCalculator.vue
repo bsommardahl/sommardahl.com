@@ -48,7 +48,7 @@
       <tbody>
         <tr>
           <td>
-            CodeX Academy Student Fee
+            Sommardahl Academy Student Fee
           </td>
           <td class="text-center">n/a</td>
           <td class="text-right">

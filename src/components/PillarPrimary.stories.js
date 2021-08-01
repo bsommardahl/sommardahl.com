@@ -5,7 +5,7 @@ import PillarPrimary from "./PillarPrimary";
 
 export default {
   component: PillarPrimary,
-  title: "PillarPrimary"
+  title: "PillarPrimary",
 };
 
 import { faBriefcase, faPeopleCarry } from "@fortawesome/free-solid-svg-icons";
@@ -19,12 +19,12 @@ export const withMentoring = () => ({
         icon={faPeopleCarry}
       >
         <p>
-          As a CodeX Leader, you'll be matched with your very own full-stack
-          mentor who will be there with you every step of the way.
+          As a Sommardahl Leader, you'll be matched with your very own
+          full-stack mentor who will be there with you every step of the way.
         </p>
       </PillarPrimary>
     );
-  }
+  },
 });
 export const withInternships = () => ({
   render() {
@@ -35,12 +35,12 @@ export const withInternships = () => ({
         icon={faBriefcase}
       >
         <p>
-          As a CodeX Leader, you'll be matched with your very own full-stack
-          mentor who will be there with you every step of the way.
+          As a Sommardahl Leader, you'll be matched with your very own
+          full-stack mentor who will be there with you every step of the way.
         </p>
       </PillarPrimary>
     );
-  }
+  },
 });
 
 // export const withJSX = () => ({

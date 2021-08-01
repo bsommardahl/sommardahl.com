@@ -43,7 +43,7 @@
         <div class="col-12 col-md-2 mb-5" v-if="!isInternational">
           <h4>Financial Aid</h4>
           <p>
-            <router-link to="/financing/codex" class="nav-link"
+            <router-link to="/financing/sommardahl" class="nav-link"
               >Student Loans</router-link
             >
           </p>

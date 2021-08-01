@@ -47,82 +47,36 @@
             data-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-            >Certifications</a
+            >Programs</a
           >
           <div class="dropdown-menu">
             <div class="nav-item">
-              <router-link to="/programs/front-end-developer" class="nav-link"
-                >Front-End Developer</router-link
+              <router-link to="/programs/podcast" class="nav-link"
+                >The Driven Dev Podcast</router-link
               >
             </div>
             <div class="dropdown-divider"></div>
             <div class="nav-item">
-              <router-link to="/programs/full-stack-developer" class="nav-link"
-                >Full-Stack Developer</router-link
+              <router-link to="/programs/coaching" class="nav-link"
+                >Coaching Program</router-link
               >
             </div>
             <div class="dropdown-divider"></div>
             <div class="nav-item">
-              <router-link to="/programs/full-stack-engineer" class="nav-link"
-                >Full-Stack Engineer</router-link
+              <router-link to="/programs/fellowship" class="nav-link"
+                >Fellowship</router-link
               >
             </div>
-            <div class="dropdown-divider"></div>
+            <!-- <div class="dropdown-divider"></div>
             <div class="nav-item">
               <router-link to="/programs" class="nav-link">Compare</router-link>
-            </div>
+            </div> -->
           </div>
         </li>
 
-        <li class="nav-item dropdown" v-if="!isInternational">
-          <a
-            href="#"
-            class="nav-link dropdown-toggle"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >Financing</a
-          >
-          <div class="dropdown-menu">
-            <div class="nav-item">
-              <router-link to="/financial-aid" class="nav-link"
-                >Deferred Payment</router-link
-              >
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link to="/ISA" class="nav-link"
-                >Income Sharing</router-link
-              >
-            </div>
-          </div>
+        <li class="nav-item">
+          <router-link to="/events" class="nav-link">Events</router-link>
         </li>
-
-        <li class="nav-item dropdown" v-if="isInternational">
-          <a
-            href="#"
-            class="nav-link dropdown-toggle"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >Financial Aid</a
-          >
-          <div class="dropdown-menu">
-            <div class="nav-item">
-              <router-link to="/financing/sommardahl" class="nav-link"
-                >Student Loans</router-link
-              >
-            </div>
-          </div>
-        </li>
-
-        <!-- <li class="nav-item">
-          <router-link to="/financial-aid" class="nav-link">Financial Aid</router-link>
-        </li>-->
 
         <li class="nav-item dropdown">
           <a
@@ -138,7 +92,13 @@
           <div class="dropdown-menu">
             <div class="nav-item">
               <router-link :to="{ path: '/howitworks' }" class="nav-link"
-                >How It Works</router-link
+                >Byron's Story</router-link
+              >
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="nav-item">
+              <router-link :to="{ path: '/process' }" class="nav-link"
+                >Process</router-link
               >
             </div>
             <div class="dropdown-divider"></div>
@@ -146,81 +106,15 @@
               <router-link
                 :to="{ path: '/howitworks', hash: '#curriculum' }"
                 class="nav-link"
-                >Curriculum</router-link
-              >
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link
-                :to="{ path: '/howitworks', hash: '#timeline' }"
-                class="nav-link"
-                >Timeline</router-link
-              >
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link
-                :to="{ path: '/howitworks', hash: '#tech' }"
-                class="nav-link"
-                >Technologies</router-link
-              >
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link
-                :to="{ path: '/howitworks', hash: '#internships' }"
-                class="nav-link"
-                >Internships</router-link
+                >Contact</router-link
               >
             </div>
           </div>
         </li>
 
-        <!-- <li class="nav-item">
-          <router-link to="/howitworks" class="nav-link"
-            >How It Works</router-link
-          >
-        </li>-->
-
-        <!-- <li class="nav-item dropdown">
-          <a
-            href="#"
-            class="nav-link dropdown-toggle"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >About</a
-          >
-          <div class="dropdown-menu">
-            <div class="nav-item">
-              <router-link to="/faqs" class="nav-link">FAQs</router-link>
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link to="/contact" class="nav-link"
-                >Contact Us</router-link
-              >
-            </div>
-          </div>
-        </li>-->
-
-        <!-- <li class="nav-item">
-          <router-link to="/testimonials" class="nav-link"
-            >Testimonials</router-link
-          >
-        </li>-->
-        <!-- <li class="nav-item">
-          <router-link class="nav-link" to="/blog">Blog</router-link>
-        </li>-->
-        <!-- <li class="nav-item">
-          <router-link class="nav-link" to="/contact">Contact</router-link>
-        </li>-->
-
         <li class="nav-item">
           <SelectPlanButton
-            text="Apply"
+            text="Join Now"
             buttonClass="btn btn-primary btn-block nav-link"
           />
         </li>
@@ -241,7 +135,7 @@ export default {
     isOpen: false,
   }),
   computed: {
-    ...mapGetters(["getBootcamp6", "isInternational"]),
+    ...mapGetters([]),
   },
   components: { SelectPlanButton, separator },
   methods: {

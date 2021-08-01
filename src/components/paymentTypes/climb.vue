@@ -9,9 +9,10 @@
         <Money :amount="paymentType.startingMonthlyPayments" />
       </h1>
       <span class="around-money">per month</span>
-      <p
-        class="mt-3 card-text text-muted"
-      >Small interest-only payments while you learn, normal payments after you graduate.</p>
+      <p class="mt-3 card-text text-muted">
+        Small interest-only payments while you learn, normal payments after you
+        graduate.
+      </p>
     </div>
     <div class="card-footer">
       <button
@@ -26,20 +27,29 @@
       <template v-slot:modal-title>Continuing Application</template>
       <div class="d-block">
         <p>
-          <img src="img/Climb-Credit-Logo-small.png" class="float-right" width="200px" />
+          <img
+            src="img/Climb-Credit-Logo-small.png"
+            class="float-right"
+            width="200px"
+          />
           We are partnering with Climb Credit to provide you with world-class
           financing. We will send your information to Climb Credit to ease the
           application process.
         </p>
         <p>
-          <strong>Important:</strong> When given the option to choose a CodeX
-          Academy program, you should choose:
+          <strong>Important:</strong> When given the option to choose a
+          Sommardahl Academy program, you should choose:
         </p>
         <div class="text-center mb-5">
           <h3 class="program-name">{{ programName }}</h3>
         </div>
       </div>
-      <b-button class="btn btn-primary" block @click="goToClimbCredit" :disabled="navigating">
+      <b-button
+        class="btn btn-primary"
+        block
+        @click="goToClimbCredit"
+        :disabled="navigating"
+      >
         <strong>Go to Climb Credit</strong>
       </b-button>
     </b-modal>
@@ -52,7 +62,7 @@ import Money from "@/components/Money";
 
 function getFormData(object) {
   var queryString = Object.keys(object)
-    .map(key => key + "=" + object[key])
+    .map((key) => key + "=" + object[key])
     .join("&");
   return queryString;
 }
@@ -79,15 +89,15 @@ async function generateUrl(baseUrl, amount, applicant) {
     addressZip: applicant.zip, //optional
     // highestEducationLevel: $("#highestEducationLevel").val(), //optional
     // currentEmploymentStatus: $("#currentEmploymentStatus").val(), //optional
-    gender: applicant.gender //optional
+    gender: applicant.gender, //optional
     // note: $("#note").val() //optional -- this field is truncated to 3000 characters
   };
   try {
     const formData = getFormData(payload);
     const result = await axios.post(baseUrl, formData, {
       headers: {
-        "Content-type": "application/x-www-form-urlencoded"
-      }
+        "Content-type": "application/x-www-form-urlencoded",
+      },
     });
     return result.data.url;
   } catch (err) {
@@ -101,12 +111,12 @@ export default {
     number: Number,
     css: String,
     programTotal: Number,
-    programName: String
+    programName: String,
   },
   components: { Money },
   data: () => ({
     url: false,
-    navigating: false
+    navigating: false,
   }),
   methods: {
     async goToClimbCredit() {
@@ -116,7 +126,7 @@ export default {
       const payload = {
         payment_type: "fin",
         payment_vendor: "climb",
-        email: applicant.email
+        email: applicant.email,
       };
       this.$store.dispatch("setPaymentInfo", payload);
 
@@ -127,8 +137,8 @@ export default {
       if (url) {
         window.open(url, "_self");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

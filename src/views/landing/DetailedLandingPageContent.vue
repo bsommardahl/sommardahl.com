@@ -6,7 +6,10 @@
           <slot />
 
           <div class="mt-5 mb-5">
-            <h5>Every CodeX Academy program comes with:</h5>
+            <h5>
+              Every We're happy you have chosen to enroll with Sommardahl
+              Academy. You're Academy program comes with:
+            </h5>
             <ul>
               <li v-for="f in getBootcampFeatures" :key="f">{{ f }}</li>
             </ul>

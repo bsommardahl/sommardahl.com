@@ -5,14 +5,14 @@ import PillarSecondary from "./PillarSecondary";
 
 export default {
   component: PillarSecondary,
-  title: "PillarSecondary"
+  title: "PillarSecondary",
 };
 
 import {
   faClock,
   faTv,
   faTasks,
-  faSimCard
+  faSimCard,
 } from "@fortawesome/free-solid-svg-icons";
 
 export const withTechnologies = () => ({
@@ -24,12 +24,12 @@ export const withTechnologies = () => ({
         icon={faSimCard}
       >
         <p>
-          As a CodeX Leader, you'll be matched with your very own full-stack
-          mentor who will be there with you every step of the way.
+          As a Sommardahl Leader, you'll be matched with your very own
+          full-stack mentor who will be there with you every step of the way.
         </p>
       </PillarSecondary>
     );
-  }
+  },
 });
 
 export const withSelfPaced = () => ({
@@ -42,12 +42,12 @@ export const withSelfPaced = () => ({
         accentColor="periwinkle"
       >
         <p>
-          As a CodeX Leader, you'll be matched with your very own full-stack
-          mentor who will be there with you every step of the way.
+          As a Sommardahl Leader, you'll be matched with your very own
+          full-stack mentor who will be there with you every step of the way.
         </p>
       </PillarSecondary>
     );
-  }
+  },
 });
 
 export const withRemote = () => ({
@@ -60,12 +60,12 @@ export const withRemote = () => ({
         accentColor="lilac"
       >
         <p>
-          As a CodeX Leader, you'll be matched with your very own full-stack
-          mentor who will be there with you every step of the way.
+          As a Sommardahl Leader, you'll be matched with your very own
+          full-stack mentor who will be there with you every step of the way.
         </p>
       </PillarSecondary>
     );
-  }
+  },
 });
 
 export const withMastery = () => ({
@@ -78,10 +78,10 @@ export const withMastery = () => ({
         accentColor="fucia"
       >
         <p>
-          As a CodeX Leader, you'll be matched with your very own full-stack
-          mentor who will be there with you every step of the way.
+          As a Sommardahl Leader, you'll be matched with your very own
+          full-stack mentor who will be there with you every step of the way.
         </p>
       </PillarSecondary>
     );
-  }
+  },
 });

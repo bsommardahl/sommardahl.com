@@ -38,7 +38,7 @@
             <p>
               The internet is
               <strong>FULL</strong> of amazing content, determined to teach you
-              to code. CodeX Academy doesn't try to reinvent the wheel by
+              to code. Sommardahl Academy doesn't try to reinvent the wheel by
               creating more and more competing content. Instead, we curate the
               best content and guide you through it like trail markers on a hike
               through the woods.

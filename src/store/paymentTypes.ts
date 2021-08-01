@@ -1,5 +1,5 @@
 import { Plan } from "@/types/Plan";
-import { Applicant } from '@/types/Applicant';
+import { Applicant } from "@/types/Applicant";
 
 function isInUSA(applicant: Applicant) {
   if (!applicant) return false;
@@ -77,9 +77,10 @@ const leifPaymentOptions = [
     termMonths: 24,
     url: "https://leif.org/commit?product_id=5ea9f9b405af553e40c404d6",
     worksWith: (program: Plan, applicant: Applicant) => {
-
-      return !isPathrise(applicant)
-        && leif(program, applicant, "Front-End Developer", fullTime);
+      return (
+        !isPathrise(applicant) &&
+        leif(program, applicant, "Front-End Developer", fullTime)
+      );
     },
   },
   {
@@ -89,8 +90,10 @@ const leifPaymentOptions = [
     termMonths: 24,
     url: "https://leif.org/commit?product_id=5ea9faa086aac87083c404ea",
     worksWith: (program: Plan, applicant: Applicant) => {
-      return !isPathrise(applicant)
-        && leif(program, applicant, "Front-End Developer", partTime);
+      return (
+        !isPathrise(applicant) &&
+        leif(program, applicant, "Front-End Developer", partTime)
+      );
     },
   },
   {
@@ -100,8 +103,10 @@ const leifPaymentOptions = [
     termMonths: 36,
     url: "https://leif.org/commit?product_id=5ea9f8f5562d30bc52c404d8",
     worksWith: (program: Plan, applicant: Applicant) => {
-      return !isPathrise(applicant)
-        && leif(program, applicant, "Full-Stack Developer", fullTime);
+      return (
+        !isPathrise(applicant) &&
+        leif(program, applicant, "Full-Stack Developer", fullTime)
+      );
     },
   },
   {
@@ -111,8 +116,10 @@ const leifPaymentOptions = [
     ratePercent: 10,
     termMonths: 36,
     worksWith: (program: Plan, applicant: Applicant) => {
-      return !isPathrise(applicant)
-        && leif(program, applicant, "Full-Stack Developer", partTime);
+      return (
+        !isPathrise(applicant) &&
+        leif(program, applicant, "Full-Stack Developer", partTime)
+      );
     },
   },
   {
@@ -122,8 +129,10 @@ const leifPaymentOptions = [
     ratePercent: 10,
     termMonths: 42,
     worksWith: (program: Plan, applicant: Applicant) => {
-      return !isPathrise(applicant)
-        && leif(program, applicant, "Full-Stack Engineer", fullTime);
+      return (
+        !isPathrise(applicant) &&
+        leif(program, applicant, "Full-Stack Engineer", fullTime)
+      );
     },
   },
   {
@@ -133,8 +142,10 @@ const leifPaymentOptions = [
     ratePercent: 10,
     termMonths: 42,
     worksWith: (program: Plan, applicant: Applicant) => {
-      return !isPathrise(applicant)
-        && leif(program, applicant, "Full-Stack Engineer", partTime);
+      return (
+        !isPathrise(applicant) &&
+        leif(program, applicant, "Full-Stack Engineer", partTime)
+      );
     },
   },
 ];
@@ -147,9 +158,10 @@ const leifPathrisePaymentOptions = [
     termMonths: 24,
     url: "https://leif.org/commit?product_id=5f451b8b87b9307d95dc1daa",
     worksWith: (program: Plan, applicant: Applicant) => {
-
-      return isPathrise(applicant)
-        && leif(program, applicant, "Front-End Developer", fullTime);
+      return (
+        isPathrise(applicant) &&
+        leif(program, applicant, "Front-End Developer", fullTime)
+      );
     },
   },
   // {
@@ -159,7 +171,7 @@ const leifPathrisePaymentOptions = [
   //   termMonths: 24,
   //   url: "https://leif.org/commit?product_id=5ea9faa086aac87083c404ea",
   //   worksWith: (program: Plan, applicant: Applicant) => {
-  //     return isPathrise(applicant) 
+  //     return isPathrise(applicant)
   //     && leif(program, applicant, "Front-End Developer", partTime);
   //   },
   // },
@@ -170,8 +182,10 @@ const leifPathrisePaymentOptions = [
     termMonths: 36,
     url: "https://leif.org/commit?product_id=5f451b505b4dd6ce73dc1f80",
     worksWith: (program: Plan, applicant: Applicant) => {
-      return isPathrise(applicant)
-        && leif(program, applicant, "Full-Stack Developer", fullTime);
+      return (
+        isPathrise(applicant) &&
+        leif(program, applicant, "Full-Stack Developer", fullTime)
+      );
     },
   },
   // {
@@ -181,7 +195,7 @@ const leifPathrisePaymentOptions = [
   //   ratePercent: 10,
   //   termMonths: 36,
   //   worksWith: (program: Plan, applicant: Applicant) => {
-  //     return isPathrise(applicant) 
+  //     return isPathrise(applicant)
   //     && leif(program, applicant, "Full-Stack Developer", partTime);
   //   },
   // },
@@ -192,8 +206,10 @@ const leifPathrisePaymentOptions = [
     ratePercent: 10,
     termMonths: 42,
     worksWith: (program: Plan, applicant: Applicant) => {
-      return isPathrise(applicant)
-        && leif(program, applicant, "Full-Stack Engineer", fullTime);
+      return (
+        isPathrise(applicant) &&
+        leif(program, applicant, "Full-Stack Engineer", fullTime)
+      );
     },
   },
   // {
@@ -203,7 +219,7 @@ const leifPathrisePaymentOptions = [
   //   ratePercent: 10,
   //   termMonths: 42,
   //   worksWith: (program: Plan, applicant: Applicant) => {
-  //     return isPathrise(applicant) 
+  //     return isPathrise(applicant)
   //     && leif(program, applicant, "Full-Stack Engineer", partTime);
   //   },
   // },
@@ -330,7 +346,7 @@ const creditCardOptions = [
 
 const installments = [
   {
-    type: "codex-installments",
+    type: "sommardahl-installments",
     stripePlanId: "plan_HJi6V12NZXKYN0",
     testStripePlanId: "plan_HKIEVCRChizWeQ",
     monthlyCharge: 500,

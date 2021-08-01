@@ -1,8 +1,8 @@
 <template>
   <div>
     <Hero unsplashId="bAQH53VquTc" height="30vh">
-      <h3>CodeX Academy Policies</h3>
-    </hero>
+      <h3>Sommardahl Academy Policies</h3>
+    </Hero>
     <div class="container">
       <router-view></router-view>
     </div>
@@ -12,9 +12,8 @@
 <script>
 import Hero from "@/components/Hero";
 export default {
-    components: {Hero}
+  components: { Hero },
 };
 </script>
 
-<style>
-</style>
+<style></style>
