@@ -61,8 +61,7 @@ jobs:
 
   static-analysis:
     runs-on: ubuntu-latest
-    needs: [security-audit]
-    if: github.ref != 'refs/heads/main'
+    needs: [build, security-audit]
     steps:
       - uses: actions/checkout@v1
       - name: Initialize CodeQL
@@ -85,7 +84,7 @@ jobs:
   #         \/     \/|__|               \/          \/     \/     \/
   deploy-prod:
     runs-on: ubuntu-latest
-    needs: [build, static-analysis]
+    needs: [static-analysis]
     if: github.ref == 'refs/heads/main'
     steps:
       - uses: actions/checkout@v1
