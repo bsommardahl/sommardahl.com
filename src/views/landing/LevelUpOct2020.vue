@@ -11,9 +11,9 @@
           <div class="col my-auto big-message">
             <Logo color="white" :width="150" class="landing-logo mb-3" />
             <div class>
-              <h3 class="text-left action">Get ready</h3>
-              <h1 class="text-left action">Level-up your skills</h1>
-              <h3 class="text-left action">Land a job</h3>
+              <h3 class="text-left action">Find your drive</h3>
+              <h1 class="text-left action">Level-up your game</h1>
+              <h3 class="text-left action">Land a promotion</h3>
             </div>
             <div class="checklist">
               <div class="title">We'll help you do it!</div>
@@ -144,7 +144,6 @@ export default {
 @import "@/variables";
 
 .level-up-landing-hero {
-  
   .thanks-box {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;

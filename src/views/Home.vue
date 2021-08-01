@@ -1,11 +1,10 @@
 <template>
   <div>
-    <LevelUpInternationalOct2020 v-if="levelup && international" />
-    <LevelUpOct2020 v-else-if="levelup" />
+    <!-- <LevelUpInternationalOct2020 v-if="levelup && international" />
     <InternationalMay2020 v-else-if="international" />
     <CollegeFSDMay2021 v-else-if="college && program == 'fsd'" />
-    <CollegeFEMay2021 v-else-if="college" />
-    <HomeApril2020 v-else-if="loaded" />
+    <CollegeFEMay2021 v-else-if="college" /> -->
+    <LevelUpOct2020 />
   </div>
 </template>
 
