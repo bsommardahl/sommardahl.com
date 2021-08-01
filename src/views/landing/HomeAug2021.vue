@@ -59,7 +59,7 @@
           <div class="start-application-form" v-if="!hasApplied">
             <h2 class="card-title text-center">Developer Coaching Program</h2>
             <StartApplicationForm
-              @submitted="startApplication"
+              @submitted="startCoachingApplication"
               submitButtonLabel="Start Membership"
             />
           </div>
@@ -85,8 +85,11 @@
               Weekly shows for your commute that keep you focused on the prize.
             </p>
             <div class="text-center mt-5">
-              <router-link to="programs/podcast" class="btn btn-lg btn-primary"
-                >Start Listening</router-link
+              <a
+                href="https://anchor.fm/byron-sommardahl"
+                target="_blank"
+                class="btn btn-lg btn-primary"
+                >Start Listening</a
               >
               <p class="mt-3">
                 <router-link to="programs/podcast" class=""
@@ -191,14 +194,6 @@ export default {
     ]),
   },
   methods: {
-    async startApplication(applicant) {
-      await this.$store.dispatch("startApplication", {
-        applicant,
-      });
-      await this.$store.dispatch("setStartDate", applicant.startDate);
-      this.hasApplied = true;
-      this.$router.push("/findplan");
-    },
     async startCoachingApplication(applicant) {
       // const price = getSku(this).price || this.certification.price;
       // await this.$store.dispatch("startApplication", {
@@ -217,10 +212,6 @@ export default {
       )}&entry.1375086099=${encodeURI(lastName)}&entry.1204421148=${encodeURI(
         email
       )}`;
-      location.href = url;
-    },
-    async startAssessment() {
-      const url = `https://docs.google.com/forms/d/e/1FAIpQLScP1A4OFO1Wv1C6ja23-w9vnpDO8dxt9nPI98VsPgbOS4fyDw/viewform?usp=sf_link`;
       location.href = url;
     },
     clearApplicant() {

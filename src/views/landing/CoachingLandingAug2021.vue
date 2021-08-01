@@ -10,6 +10,21 @@
       <h4>A system for developing mastery</h4>
     </Hero>
 
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-10 bg-periwinkle shadow border p-4">
+          <div class="start-application-form" v-if="!hasApplied">
+            <h2 class="card-title text-center">Developer Coaching Program</h2>
+            <StartApplicationForm
+              @submitted="startCoachingApplication"
+              submitButtonLabel="Start Membership"
+            />
+          </div>
+          <Thanks v-if="hasApplied" @startOver="clearApplicant" />
+          <PartneringWith :partner="getSource" />
+        </div>
+      </div>
+    </div>
     <!-- <div class="mt-5 pt-3 bg-periwinkle">
       <div class="container">
         <QandASection />
@@ -65,14 +80,6 @@ export default {
     ]),
   },
   methods: {
-    async startApplication(applicant) {
-      await this.$store.dispatch("startApplication", {
-        applicant,
-      });
-      await this.$store.dispatch("setStartDate", applicant.startDate);
-      this.hasApplied = true;
-      this.$router.push("/findplan");
-    },
     async startCoachingApplication(applicant) {
       // const price = getSku(this).price || this.certification.price;
       // await this.$store.dispatch("startApplication", {
@@ -91,10 +98,6 @@ export default {
       )}&entry.1375086099=${encodeURI(lastName)}&entry.1204421148=${encodeURI(
         email
       )}`;
-      location.href = url;
-    },
-    async startAssessment() {
-      const url = `https://docs.google.com/forms/d/e/1FAIpQLScP1A4OFO1Wv1C6ja23-w9vnpDO8dxt9nPI98VsPgbOS4fyDw/viewform?usp=sf_link`;
       location.href = url;
     },
     clearApplicant() {

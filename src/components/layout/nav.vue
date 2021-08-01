@@ -63,40 +63,25 @@
         </li>
 
         <li class="nav-item">
-          <router-link to="/events" class="nav-link">Events</router-link>
+          <!-- <router-link to="/events" class="nav-link">Events</router-link> -->
+          <a
+            href="https://www.meetup.com/sommardahl-academy/events"
+            target="_blank"
+            class="nav-link"
+            >Events</a
+          >
         </li>
 
-        <li class="nav-item dropdown">
-          <a
-            href="#"
-            class="nav-link dropdown-toggle"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >About</a
+        <!-- <div class="nav-item">
+          <router-link :to="{ path: '/process' }" class="nav-link"
+            >Process</router-link
           >
-          <div class="dropdown-menu">
-            <div class="nav-item">
-              <router-link :to="{ path: '/byron' }" class="nav-link"
-                >Byron's Story</router-link
-              >
-            </div>
-            <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link :to="{ path: '/process' }" class="nav-link"
-                >Process</router-link
-              >
-            </div>
-            <!-- <div class="dropdown-divider"></div>
-            <div class="nav-item">
-              <router-link :to="{ path: '/contact' }" class="nav-link"
-                >Contact</router-link
-              >
-            </div> -->
-          </div>
-        </li>
+        </div>
+        <div class="nav-item">
+          <router-link :to="{ path: '/byron' }" class="nav-link"
+            >Byron's Story</router-link
+          >
+        </div> -->
 
         <!-- <li class="nav-item">
           <SelectPlanButton

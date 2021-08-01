@@ -4,16 +4,16 @@
     <InternationalMay2020 v-else-if="international" />
     <CollegeFSDMay2021 v-else-if="college && program == 'fsd'" />
     <CollegeFEMay2021 v-else-if="college" /> -->
-    <LevelUpOct2020 />
+    <HomeAug2021 />
   </div>
 </template>
 
 <script>
-import LevelUpOct2020 from "../views/landing/LevelUpOct2020.vue";
+import HomeAug2021 from "./landing/HomeAug2021.vue";
 
 export default {
   components: {
-    LevelUpOct2020,
+    HomeAug2021,
   },
   data() {
     return {

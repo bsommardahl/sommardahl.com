@@ -38,9 +38,6 @@
               >Fellowship</router-link
             >
           </p>
-          <p>
-            <router-link to="/events" disabled>Events</router-link>
-          </p>
         </div>
 
         <!-- <div class="col-12 col-md-2 mb-5">
@@ -64,6 +61,13 @@
           </p>
           <p>
             <router-link to="/process">Process</router-link>
+          </p>
+          <p>
+            <!-- <router-link to="/events" disabled>Events</router-link> --><a
+              href="https://www.meetup.com/sommardahl-academy/events"
+              target="_blank"
+              >Events</a
+            >
           </p>
           <!-- <p>
             <router-link to="/howitworks#timeline">Timeline</router-link>

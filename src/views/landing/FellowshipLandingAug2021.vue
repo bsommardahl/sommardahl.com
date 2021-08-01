@@ -10,13 +10,17 @@
       <h4>Immersive Mentorship Program for Driven Developers</h4>
     </Hero>
 
-    <!--     
+    <div class="container mt-5 text-center">
+      <a @click="startAssessment()" class="btn btn-lg btn-primary"
+        >Start Assessment</a
+      >
+    </div>
 
-    <div class="mt-5 pt-3 bg-periwinkle">
+    <div class="mt-5 pt-3 ">
       <div class="container">
         <QandASection />
       </div>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -67,34 +71,6 @@ export default {
     ]),
   },
   methods: {
-    async startApplication(applicant) {
-      await this.$store.dispatch("startApplication", {
-        applicant,
-      });
-      await this.$store.dispatch("setStartDate", applicant.startDate);
-      this.hasApplied = true;
-      this.$router.push("/findplan");
-    },
-    async startCoachingApplication(applicant) {
-      // const price = getSku(this).price || this.certification.price;
-      // await this.$store.dispatch("startApplication", {
-      //   applicant: {
-      //     ...applicant,
-      //     program_name: "Front-End Developer",
-      //     program_price: price,
-      //   },
-      // });
-      // await this.$store.dispatch("setStartDate", applicant.startDate);
-      this.hasApplied = true;
-
-      const { email, firstName, lastName } = applicant;
-      const url = `https://docs.google.com/forms/d/e/1FAIpQLSeEXPST7tmTuflfGVckpPpeVaSM4MzWQlWDqA56kZwWk_g3DQ/viewform?usp=pp_url&entry.879340931=${encodeURI(
-        firstName
-      )}&entry.1375086099=${encodeURI(lastName)}&entry.1204421148=${encodeURI(
-        email
-      )}`;
-      location.href = url;
-    },
     async startAssessment() {
       const url = `https://docs.google.com/forms/d/e/1FAIpQLScP1A4OFO1Wv1C6ja23-w9vnpDO8dxt9nPI98VsPgbOS4fyDw/viewform?usp=sf_link`;
       location.href = url;
