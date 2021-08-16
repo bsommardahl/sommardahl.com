@@ -33,12 +33,12 @@
         <h3>Contact Details</h3>
         <p>
           Sommardahl Academy LLC
-          <br />815 Banner Drive <br />Murfreesboro, TN 37129
+          <br />Murfreesboro, TN 37129
         </p>
         <p>
-          <span title="Phone">Phone:</span>
+          <span title="Phone">Call/Text:</span>
           <br />
-          <a href="tel:6156698239">(615) 669-8239</a>
+          <a href="tel:6154553773">(615) 455-3773</a>
         </p>
         <p>
           <span title="Email">Email:</span>

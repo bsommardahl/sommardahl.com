@@ -25,6 +25,26 @@
         </div>
       </div>
     </div>
+
+    <div class="container mt-5">
+      <h3>What do I get?</h3>
+      <p>
+        In the developer coaching program, you get:
+        <ul>
+          <li>Weekly accountability and coaching sessions</li>
+          <li>Access to library of previous coaching sessions</li>
+          <li>Weekly stretch assignments</li>
+          <li>Annual seniority-gap assessment and career coaching</li>
+          <li>Access to our community of like-minded aspiring senior developers</li>
+          <li>Access to member-only enrichment events</li>
+          <li>Access to invite-only Sommardahl Academy Fellowship</li>
+        </ul>
+      </p>
+
+      <div class="row">
+        
+      </div>
+    </div>
     <!-- <div class="mt-5 pt-3 bg-periwinkle">
       <div class="container">
         <QandASection />
@@ -70,6 +90,59 @@ export default {
   },
   data: () => ({
     hasApplied: false,
+    features:[
+      {
+        icon: "",
+        title: "Weekly Coaching",
+        description: "",
+        galleryImageUrl: ""
+        
+      },
+      {
+        icon: "",
+        title: "Video Library",
+        description: "",
+        galleryImageUrl: ""
+        
+      },{
+        icon: "",
+        title: "Stretch Assignments",
+        description: "",
+        galleryImageUrl: ""
+        
+      }
+      ,{
+        icon: "",
+        title: "Gap Assessment",
+        description: "",
+        galleryImageUrl: ""
+        
+      },{
+        icon: "",
+        title: "Career Coaching",
+        description: "",
+        galleryImageUrl: ""
+        
+      },{
+        icon: "",
+        title: "Like-Minded Community",
+        description: "",
+        galleryImageUrl: ""
+        
+      },{
+        icon: "",
+        title: "Enrichment Events",
+        description: "",
+        galleryImageUrl: ""
+        
+      },{
+        icon: "",
+        title: "Fellowship Invite",
+        description: "",
+        galleryImageUrl: ""
+        
+      }
+    ]
   }),
   computed: {
     ...mapGetters([

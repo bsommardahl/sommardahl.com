@@ -9,7 +9,14 @@
       <h1>Sommardahl Fellowship</h1>
       <h4>Immersive Mentorship Program for Driven Developers</h4>
     </Hero>
-
+    <div class="container mt-5">
+      <h3>What is a Fellowship?</h3>
+      <p>
+        A fellowship at Sommardahl Academy is an immersive mentorship program
+        with daily touch points as participants address their seniority gaps
+        with targetted learning and guidance.
+      </p>
+    </div>
     <div class="container mt-5 text-center">
       <a @click="startAssessment()" class="btn btn-lg btn-primary"
         >Start Assessment</a
