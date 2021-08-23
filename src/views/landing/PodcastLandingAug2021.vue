@@ -22,7 +22,6 @@
 
 <script>
 import Hero from "@/components/Hero";
-import StartApplicationForm from "@/views/landing/StartApplicationForm";
 import Thanks from "@/views/landing/Thanks";
 import { mapGetters } from "vuex";
 import Icon from "@/components/Icon";
@@ -41,7 +40,6 @@ export default {
   components: {
     Hero,
     Thanks,
-    StartApplicationForm,
     Icon,
     Logo,
     Thanks,

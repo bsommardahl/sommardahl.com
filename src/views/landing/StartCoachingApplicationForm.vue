@@ -1,14 +1,24 @@
 <template>
   <form @submit.prevent="submitForm">
     <div class="form-label-group">
-      <label for="inputUserName">Name</label>
+      <label for="inputUserName">First Name</label>
       <input
         type="text"
-        name="name"
-        autocomplete="name"
+        autocomplete="first"
         class="form-control"
-        placeholder="Name"
-        v-model="name"
+        placeholder="First Name"
+        v-model="first"
+        required
+      />
+    </div>
+    <div class="form-label-group">
+      <label for="inputUserName">Last Name</label>
+      <input
+        type="text"
+        autocomplete="last"
+        class="form-control"
+        placeholder="Last Name"
+        v-model="last"
         required
       />
     </div>
@@ -69,7 +79,11 @@
     </div> -->
 
     <div class="cta">
-      <button class="btn btn-lg btn-cta btn-block text-uppercase" type="submit">
+      <button
+        class="btn btn-lg btn-cta btn-block text-uppercase"
+        type="submit"
+        :disabled="loading"
+      >
         {{ submitButtonLabel || "Start Application" }}
       </button>
     </div>
@@ -80,7 +94,6 @@
 </template>
 
 <script>
-import { getNextDeadlineFormatted } from "@/utils/dates";
 import { mapGetters } from "vuex";
 
 export default {
@@ -88,19 +101,19 @@ export default {
     hasPromoCode: String,
     offerFinancialAid: Boolean,
     submitButtonLabel: String,
+    source: String,
   },
   data: () => ({
-    name: "",
+    first: "",
+    last: "",
     email: "",
-    financialAid: true,
-    promoCode: "",
-    startDate: getNextDeadlineFormatted(),
+    loading: false,
   }),
   computed: {
-    ...mapGetters(["getPromoCodesDisplay"]),
+    ...mapGetters([]),
   },
   mounted() {
-    this.promoCode = (this.hasPromoCode || "").toUpperCase();
+    // this.promoCode = (this.hasPromoCode || "").toUpperCase();
   },
   methods: {
     track() {
@@ -109,20 +122,24 @@ export default {
         send_to: "AW-650985233/XLT-CKLD_8wBEJH-tLYC",
       });
     },
-    submitForm() {
-      const nameParts = this.name.trim().split(" ");
-      const lastName = nameParts[nameParts.length - 1];
-      const firstName = this.name.replace(lastName, "").trim();
-      this.$store.dispatch("applyPromoCode", this.promoCode);
-      this.$emit("submitted", {
-        firstName,
-        lastName,
-        financialAid: this.financialAid,
+    async submitForm() {
+      this.loading = true;
+
+      const applicant = {
+        first: this.first,
+        last: this.last,
         email: this.email,
-        startDate: this.startDate,
-        promoCodes: this.getPromoCodesDisplay,
-      });
-      this.track();
+        source: this.source,
+      };
+
+      await this.$store.dispatch("startCoachingApplication", applicant);
+      this.$emit("submitted", applicant);
+      // this.track();
+
+      const url = `https://calendly.com/sommardahl-academy/coaching-session-launch?name=${encodeURI(
+        this.first
+      )}%20${encodeURI(this.last)}&email=${encodeURI(this.email)}`;
+      window.location = url;
     },
   },
 };

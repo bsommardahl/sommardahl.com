@@ -4,8 +4,8 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import { BootstrapVue, IconsPlugin } from "bootstrap-vue";
-import VueGtag from "vue-gtag";
-import Hotjar from "vue-hotjar";
+// import VueGtag from "vue-gtag";
+// import Hotjar from "vue-hotjar";
 import bootstrapFontAwesome from "./bootstrapFontAwesome";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 import VueScrollTo from "vue-scrollto";
@@ -41,22 +41,22 @@ Vue.component("no-nav-layout", NoNav);
 Vue.component("font-awesome-icon", FontAwesomeIcon);
 bootstrapFontAwesome();
 
-Vue.use(Hotjar, {
-  id: "1739723",
-  isProduction: true,
-});
+// Vue.use(Hotjar, {
+//   id: "1739723",
+//   isProduction: true,
+// });
 
-Vue.use(
-  VueGtag,
-  {
-    config: { id: "UA-158800537-1" },
-    includes: [{ id: "AW-650985233", params: { send_page_views: false } }],
-  },
-  router
-);
+// Vue.use(
+//   VueGtag,
+//   {
+//     config: { id: "UA-158800537-1" },
+//     includes: [{ id: "AW-650985233", params: { send_page_views: false } }],
+//   },
+//   router
+// );
 
 Vue.use(Rollbar, {
-  accessToken: "8e73588e9df640c5bc4c1e2c9f081107",
+  accessToken: "793e9b01dc4d46e3af9a25f56ac41fc9",
   captureUncaught: true,
   captureUnhandledRejections: true,
   enabled: true,
@@ -85,7 +85,7 @@ Vue.config.errorHandler = (err) => {
 };
 
 window.onerror = function(message, source, lineno, colno, error) {
-  console.log("Exception: ", error);
+  //  console.log("Exception: ", error);
 };
 
 Vue.config.productionTip = false;

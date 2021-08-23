@@ -2,13 +2,13 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark text-white">
     <div class="text-center mb-5">
-      <img src="img/logo/codex_hat_white_small.png" width="70" />
+      <!-- <img src="img/logo/codex_hat_white_small.png" width="70" /> -->
     </div>
 
     <div class="container">
       <div class="row justify-content-center text-center mt-5 mb-4">
         <div class="col-1">
-          <a href="https://facebook.com/sommardahlacademy" target="_blank">
+          <a href="https://facebook.com/drivendeveloper" target="_blank">
             <font-awesome-icon :icon="faFacebookSquare" class="fa-2x" />
           </a>
         </div>
@@ -18,10 +18,7 @@
           </a>
         </div>
         <div class="col-1">
-          <a
-            href="https://www.instagram.com/sommardahlacademy/"
-            target="_blank"
-          >
+          <a href="https://www.instagram.com/drivendeveloper/" target="_blank">
             <font-awesome-icon :icon="faInstagram" class="fa-2x" />
           </a>
         </div>

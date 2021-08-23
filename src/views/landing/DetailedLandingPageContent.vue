@@ -121,14 +121,7 @@ export default {
     hasApplied: false,
   }),
   computed: {
-    ...mapGetters([
-      "getMethods",
-      "getSource",
-      "getApplicant",
-      "getPromoCodesDisplay",
-      "getCertifications",
-      "getBootcampFeatures",
-    ]),
+    ...mapGetters(["getApplicant"]),
     price() {
       return getSku(this).price || this.certification.price;
     },

@@ -3,11 +3,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- <div class="container"> -->
     <a href="#" class="navbar-brand" @click.prevent="goHome">
-      <img
-        class="logo"
-        src="img/logo/horizontal_logo.png"
-        alt="Sommardahl Academy Logo"
-      />
+      Sommardahl Academy
     </a>
     <button
       class="navbar-toggler navbar-toggler-right"

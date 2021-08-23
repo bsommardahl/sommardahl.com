@@ -7,7 +7,7 @@
       backgroundColor="rgba(25, 32, 71,0.7)"
     >
       <h1>Sommardahl Fellowship</h1>
-      <h4>Immersive Mentorship Program for Driven Developers</h4>
+      <h4>Immersive Mentorship Program for Aspiring Master Developers</h4>
     </Hero>
     <div class="container mt-5">
       <h3>What is a Fellowship?</h3>
@@ -33,7 +33,6 @@
 
 <script>
 import Hero from "@/components/Hero";
-import StartApplicationForm from "@/views/landing/StartApplicationForm";
 import Thanks from "@/views/landing/Thanks";
 import { mapGetters } from "vuex";
 import Icon from "@/components/Icon";
@@ -52,7 +51,6 @@ export default {
   components: {
     Hero,
     Thanks,
-    StartApplicationForm,
     Icon,
     Logo,
     Thanks,

@@ -39,15 +39,14 @@
           </div>
 
           <div class="col-5 d-none d-lg-block my-auto apply">
-            <div class="start-application-form" v-if="!hasApplied">
-              <h5 class="card-title text-center">Developer Coaching Program</h5>
-              <StartApplicationForm
+            <div class="start-application-form">
+              <h2 class="card-title text-center">FREE Coaching Session</h2>
+              <StartCoachingApplicationForm
                 @submitted="startCoachingApplication"
-                submitButtonLabel="Start Membership"
+                submitButtonLabel="Schedule 1st Session"
+                source="CoachingLandingAug2021"
               />
             </div>
-            <Thanks v-if="hasApplied" @startOver="clearApplicant" />
-            <PartneringWith :partner="getSource" />
           </div>
         </div>
       </div>
@@ -56,15 +55,14 @@
     <div class="container d-block d-lg-none mt-5">
       <div class="row justify-content-center">
         <div class="col-10 bg-periwinkle shadow border p-4">
-          <div class="start-application-form" v-if="!hasApplied">
-            <h2 class="card-title text-center">Developer Coaching Program</h2>
-            <StartApplicationForm
+          <div class="start-application-form">
+            <h2 class="card-title text-center">FREE Coaching Session</h2>
+            <StartCoachingApplicationForm
               @submitted="startCoachingApplication"
-              submitButtonLabel="Start Membership"
+              submitButtonLabel="Schedule 1st Session"
+              source="CoachingLandingAug2021"
             />
           </div>
-          <Thanks v-if="hasApplied" @startOver="clearApplicant" />
-          <PartneringWith :partner="getSource" />
         </div>
       </div>
     </div>
@@ -81,10 +79,13 @@
             subtitle="The Driven Developer"
             icon="podcast"
           >
-            <p class="pillar-text">
+            <div class="pillar-text">
               Weekly shows for your commute that keep you focused on the prize.
-            </p>
-            <div class="text-center mt-5">
+            </div>
+
+            <div class="pillar-price"><h1 class="mt-3">FREE</h1></div>
+
+            <div class="text-center mt-3">
               <a
                 href="https://anchor.fm/byron-sommardahl"
                 target="_blank"
@@ -102,16 +103,24 @@
         <div class="col col-md-6 col-lg-4 mb-5">
           <PillarPrimary
             title="Coaching"
-            subtitle="Coaching Program"
+            subtitle="Dev Amplifier"
             icon="mentorscreen"
           >
-            <p class="pillar-text">
+            <div class="pillar-text">
               Coaching and accountability program for those who are serious
-              about leveling up.
-            </p>
-            <div class="text-center mt-5">
+              about amplifying their growth.
+            </div>
+
+            <div class="pillar-price">
+              <h1 class="mt-3 mb-0">
+                <Money :amount="83" />
+              </h1>
+              <div>per month</div>
+            </div>
+
+            <div class="text-center mt-3">
               <a @click="goto('apply')" class="btn btn-lg btn-primary"
-                >Start Membership</a
+                >Schedule 1st Session</a
               >
               <p class="mt-3">
                 <router-link to="programs/coaching" class=""
@@ -124,15 +133,22 @@
         <div class="col col-md-6 col-lg-4 mb-5">
           <PillarPrimary
             title="Fellowship"
-            subtitle="Mentorship Program"
+            subtitle="Sommardahl Fellowship"
             icon="hands"
           >
-            <p class="pillar-text">
+            <div class="pillar-text">
               Accellerated growth through mentorship and constant feedback.
-            </p>
-            <div class="text-center mt-5">
-              <a @click="startAssessment()" class="btn btn-lg btn-primary"
-                >Start Assessment</a
+            </div>
+
+            <div class="pillar-price">
+              <h2 class="mt-3">Let's Talk</h2>
+            </div>
+
+            <div class="text-center mt-3">
+              <a
+                @click="scheduleFellowshipCall()"
+                class="btn btn-lg btn-primary"
+                >Schedule a Call</a
               >
               <p class="mt-3">
                 <router-link to="programs/fellowship" class=""
@@ -149,7 +165,7 @@
 
 <script>
 import Hero from "@/components/Hero";
-import StartApplicationForm from "@/views/landing/StartApplicationForm";
+import StartCoachingApplicationForm from "@/views/landing/StartCoachingApplicationForm";
 import Thanks from "@/views/landing/Thanks";
 import { mapGetters } from "vuex";
 import Icon from "@/components/Icon";
@@ -163,15 +179,17 @@ import StatsSection from "@/components/sections/StatsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
 import QandASection from "@/components/sections/QandASection";
 import PillarPrimary from "@/components/PillarPrimary";
+import Money from "@/components/Money";
 
 export default {
   components: {
     Hero,
     Thanks,
-    StartApplicationForm,
+    StartCoachingApplicationForm,
     Icon,
     Logo,
     Thanks,
+    Money,
     PromoAppFeeWaived,
     PartneringWith,
     TechSection,
@@ -186,33 +204,21 @@ export default {
     hasApplied: false,
   }),
   computed: {
-    ...mapGetters([
-      "getMethods",
-      "getSource",
-      "getApplicant",
-      "getPromoCodesDisplay",
-    ]),
+    ...mapGetters(["getApplicant"]),
   },
   methods: {
     async startCoachingApplication(applicant) {
-      // const price = getSku(this).price || this.certification.price;
-      // await this.$store.dispatch("startApplication", {
-      //   applicant: {
-      //     ...applicant,
-      //     program_name: "Front-End Developer",
-      //     program_price: price,
-      //   },
-      // });
-      // await this.$store.dispatch("setStartDate", applicant.startDate);
       this.hasApplied = true;
-
-      const { email, firstName, lastName } = applicant;
-      const url = `https://docs.google.com/forms/d/e/1FAIpQLSeEXPST7tmTuflfGVckpPpeVaSM4MzWQlWDqA56kZwWk_g3DQ/viewform?usp=pp_url&entry.879340931=${encodeURI(
-        firstName
-      )}&entry.1375086099=${encodeURI(lastName)}&entry.1204421148=${encodeURI(
-        email
-      )}`;
-      location.href = url;
+    },
+    async scheduleFellowshipCall() {
+      const applicant = this.getApplicant;
+      let url = `https://calendly.com/sommardahl-academy/fellowship-intro`;
+      if (applicant) {
+        url += `?name=${encodeURI(applicant.first)}%20${encodeURI(
+          applicant.last
+        )}&email=${encodeURI(applicant.email)}`;
+      }
+      window.location = url;
     },
     clearApplicant() {
       this.hasApplied = false;
@@ -240,7 +246,10 @@ export default {
 @import "@/variables";
 
 .pillar-text {
-  min-height: 100px;
+  min-height: 80px;
+}
+.pillar-price {
+  min-height: 80px;
 }
 
 .level-up-landing-hero {

@@ -6,22 +6,22 @@
       height="50vh"
       backgroundColor="rgba(25, 32, 71,0.7)"
     >
-      <h1>Developer Coaching Program</h1>
-      <h4>A system for developing mastery</h4>
+      <h1>Dev Amplifier</h1>
+      <h4>The mastery growth system for software developers</h4>
     </Hero>
 
     <div class="container mt-5">
       <div class="row justify-content-center">
         <div class="col-10 bg-periwinkle shadow border p-4">
-          <div class="start-application-form" v-if="!hasApplied">
-            <h2 class="card-title text-center">Developer Coaching Program</h2>
-            <StartApplicationForm
+          <div class="start-application-form" >
+            <h2 class="card-title text-center">FREE Coaching Session</h2>
+            <StartCoachingApplicationForm
               @submitted="startCoachingApplication"
-              submitButtonLabel="Start Membership"
+              submitButtonLabel="Schedule Session"
+              source="CoachingLandingAug2021"
             />
           </div>
-          <Thanks v-if="hasApplied" @startOver="clearApplicant" />
-          <PartneringWith :partner="getSource" />
+          
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
 
 <script>
 import Hero from "@/components/Hero";
-import StartApplicationForm from "@/views/landing/StartApplicationForm";
+import StartCoachingApplicationForm from "@/views/landing/StartCoachingApplicationForm";
 import Thanks from "@/views/landing/Thanks";
 import { mapGetters } from "vuex";
 import Icon from "@/components/Icon";
@@ -74,7 +74,7 @@ export default {
   components: {
     Hero,
     Thanks,
-    StartApplicationForm,
+    StartCoachingApplicationForm,
     Icon,
     Logo,
     Thanks,
@@ -146,32 +146,14 @@ export default {
   }),
   computed: {
     ...mapGetters([
-      "getMethods",
-      "getSource",
       "getApplicant",
-      "getPromoCodesDisplay",
+      "getSource",
     ]),
   },
   methods: {
     async startCoachingApplication(applicant) {
-      // const price = getSku(this).price || this.certification.price;
-      // await this.$store.dispatch("startApplication", {
-      //   applicant: {
-      //     ...applicant,
-      //     program_name: "Front-End Developer",
-      //     program_price: price,
-      //   },
-      // });
-      // await this.$store.dispatch("setStartDate", applicant.startDate);
       this.hasApplied = true;
 
-      const { email, firstName, lastName } = applicant;
-      const url = `https://docs.google.com/forms/d/e/1FAIpQLSeEXPST7tmTuflfGVckpPpeVaSM4MzWQlWDqA56kZwWk_g3DQ/viewform?usp=pp_url&entry.879340931=${encodeURI(
-        firstName
-      )}&entry.1375086099=${encodeURI(lastName)}&entry.1204421148=${encodeURI(
-        email
-      )}`;
-      location.href = url;
     },
     clearApplicant() {
       this.hasApplied = false;

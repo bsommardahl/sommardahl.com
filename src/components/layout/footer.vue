@@ -2,7 +2,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark text-white">
     <div class="text-center mb-5">
-      <img src="img/logo/codex_hat_white_small.png" width="70" />
+      <!-- <img src="img/logo/codex_hat_white_small.png" width="70" /> -->
     </div>
     <div class="container">
       <div class="row justify-content-md-center text-center">

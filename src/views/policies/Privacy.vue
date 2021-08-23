@@ -471,8 +471,7 @@
     </p>
     <p>
       Attn: Privacy Officer
-      <br />1612 Westgate Circle Suite 222. <br />Brentwood, Tn 37027
-      <br />Email:
+      <br />815 Banner Drive <br />Murfreesboro, TN 37129 <br />Email:
       <a href="mailto:privacy@sommardahl.com">privacy@sommardahl.com</a>
     </p>
   </div>
