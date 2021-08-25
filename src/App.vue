@@ -21,11 +21,7 @@ export default {
       return (this.$route.meta.layout || default_layout) + "-layout";
     },
   },
-  mounted() {
-    if (this.$route.query.promo) {
-      this.$store.dispatch("applyPromoCode", this.$route.query.promo);
-    }
-  },
+  mounted() {},
 };
 </script>
 

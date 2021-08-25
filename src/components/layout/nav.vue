@@ -68,12 +68,6 @@
           >
         </li>
 
-        <li class="nav-item">
-          <a href="javascript:void(0)" class="nav-link" data-cb-type="portal">
-            Account
-          </a>
-        </li>
-
         <!-- <div class="nav-item">
           <router-link :to="{ path: '/process' }" class="nav-link"
             >Process</router-link
@@ -126,6 +120,7 @@ export default {
       this.isOpen = false;
     },
   },
+  mounted() {},
 };
 </script>
 
