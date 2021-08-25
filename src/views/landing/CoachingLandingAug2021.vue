@@ -42,7 +42,7 @@
       </p>
 
       <div class="row">
-        <div class="col"><a href = "javascript:void(0)"  data-cb-type = "checkout"  data-cb-item-0 = "DevAmp-USD-Monthly"  data-cb-item-0-quantity = "1" > subscribe </a></div>
+        <div class="col"><a href = "javascript:void(0)"  data-cb-type = "checkout"  data-cb-item-0 = "DevAmp1-USD-Monthly"  data-cb-item-0-quantity = "1" > subscribe </a></div>
       </div>
     </div>
     <!-- <div class="mt-5 pt-3 bg-periwinkle">
