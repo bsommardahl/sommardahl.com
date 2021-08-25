@@ -13,27 +13,27 @@
             <div class>
               <h3 class="text-left action">Level-up your game</h3>
               <h1 class="text-left action">Find your Drive</h1>
-              <h3 class="text-left action">Earn Seniority</h3>
+              <h3 class="text-left action">Gain Seniority</h3>
             </div>
             <div class="checklist">
               <div class="title">
-                Join the coaching program and make it happen!
+                Join the coaching program that can make it happen!
               </div>
               <div class="item">
                 <Icon name="checkbox" />
-                <span>Weekly Sessions</span>
+                <span>Weekly Coaching</span>
               </div>
               <div class="item">
                 <Icon name="checkbox" />
-                <span>Goals and Assessments</span>
+                <span>Stretch Assignments</span>
+              </div>
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Growth Assessments</span>
               </div>
               <div class="item">
                 <Icon name="checkbox" />
                 <span>Like-Minded Community</span>
-              </div>
-              <div class="item">
-                <Icon name="checkbox" />
-                <span>Any Skill Level</span>
               </div>
             </div>
           </div>
