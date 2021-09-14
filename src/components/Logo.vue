@@ -9,15 +9,15 @@ export default {
   props: {
     color: String,
     width: Number,
-    orientation: String
+    orientation: String,
   },
   computed: {
     src() {
       if (this.orientation === "vertical")
-        return "img/logo/website_logo_transparent_background.png";
-      return "img/logo/horizontal_logo.png";
-    }
-  }
+        return "img/logo/logo_black_vertical.png";
+      return "img/logo/logo_black_horizontal.png";
+    },
+  },
 };
 </script>
 

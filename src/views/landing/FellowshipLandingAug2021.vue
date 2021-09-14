@@ -18,14 +18,14 @@
       </p>
     </div>
     <div class="container mt-5 text-center">
-      <a @click="startAssessment()" class="btn btn-lg btn-primary"
-        >Start Assessment</a
+      <a @click="scheduleFellowshipCall()" class="btn btn-lg btn-primary"
+        >Schedule a Call</a
       >
     </div>
 
     <div class="mt-5 pt-3 ">
       <div class="container">
-        <QandASection />
+        <!-- <QandASection /> -->
       </div>
     </div>
   </div>
@@ -82,6 +82,16 @@ export default {
     },
     clearApplicant() {
       this.hasApplied = false;
+    },
+    async scheduleFellowshipCall() {
+      const applicant = this.getApplicant || {};
+      let url = `https://calendly.com/sommardahl-academy/fellowship-intro`;
+      if (applicant) {
+        url += `?name=${encodeURI(applicant.first)}%20${encodeURI(
+          applicant.last
+        )}&email=${encodeURI(applicant.email)}`;
+      }
+      window.location = url;
     },
     goto(el) {
       function isHidden(el) {

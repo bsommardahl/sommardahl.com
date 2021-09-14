@@ -3,7 +3,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- <div class="container"> -->
     <a href="#" class="navbar-brand" @click.prevent="goHome">
-      Sommardahl Academy
+      <Logo :width="250" />
     </a>
     <button
       class="navbar-toggler navbar-toggler-right"
@@ -94,6 +94,7 @@
 <script>
 import separator from "@/components/layout/separator";
 import SelectPlanButton from "@/components/SelectPlanButton";
+import Logo from "@/components/Logo";
 import { mapGetters } from "vuex";
 
 export default {
@@ -104,7 +105,7 @@ export default {
   computed: {
     ...mapGetters([]),
   },
-  components: { SelectPlanButton, separator },
+  components: { SelectPlanButton, separator, Logo },
   methods: {
     toggleMenu() {
       this.isOpen = !this.isOpen;

@@ -9,7 +9,7 @@
       <div class="container">
         <div class="row h-100">
           <div class="col my-auto big-message">
-            <Logo color="white" :width="150" class="landing-logo mb-3" />
+            <Logo color="white" :width="250" class="landing-logo mb-3" />
             <div class>
               <h3 class="text-left action">Turn-key, Co-Branded</h3>
               <h1 class="text-left action">Coding Bootcamps</h1>

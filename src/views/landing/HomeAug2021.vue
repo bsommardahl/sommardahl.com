@@ -9,7 +9,7 @@
       <div class="container">
         <div class="row h-100">
           <div class="col my-auto big-message">
-            <Logo color="white" :width="150" class="landing-logo mb-3" />
+            <Logo color="white" :width="250" class="landing-logo mb-3" />
             <div class>
               <h3 class="text-left action">Level-up your game</h3>
               <h1 class="text-left action">Find your Drive</h1>
@@ -87,7 +87,7 @@
 
             <div class="text-center mt-3">
               <a
-                href="https://anchor.fm/byron-sommardahl"
+                href="https://anchor.fm/sommardahl"
                 target="_blank"
                 class="btn btn-lg btn-primary"
                 >Start Listening</a
