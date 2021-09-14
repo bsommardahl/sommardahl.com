@@ -2,7 +2,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark text-white">
     <div class="text-center mb-5">
-      <!-- <img src="img/logo/codex_hat_white_small.png" width="70" /> -->
+      <img src="img/logo/emblem_white.png" width="50" />
     </div>
     <div class="container">
       <div class="row justify-content-md-center text-center">
@@ -12,9 +12,9 @@
             <a href="#" @click.prevent="goHome">Home</a>
           </p>
 
-          <p>
+          <!-- <p>
             <router-link to="/faqs">FAQs</router-link>
-          </p>
+          </p> -->
           <p>
             <router-link to="/contact">Contact Us</router-link>
           </p>
@@ -22,9 +22,9 @@
 
         <div class="col-12 col-md-2 mb-5">
           <h4>Programs</h4>
-          <p>
+          <!-- <p>
             <router-link to="/programs">Overview</router-link>
-          </p>
+          </p> -->
           <p>
             <router-link to="/programs/podcast" disabled>Podcast</router-link>
           </p>
@@ -56,12 +56,12 @@
         </div> -->
         <div class="col-12 col-md-2 mb-5">
           <h4>About Us</h4>
-          <p>
+          <!-- <p>
             <router-link to="/byron">Byron's Story</router-link>
           </p>
           <p>
             <router-link to="/process">Process</router-link>
-          </p>
+          </p> -->
           <p>
             <!-- <router-link to="/events" disabled>Events</router-link> --><a
               href="https://www.meetup.com/sommardahl-academy/events"
