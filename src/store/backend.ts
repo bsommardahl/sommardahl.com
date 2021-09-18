@@ -2,8 +2,10 @@ import axios from "axios";
 
 const endpoints: any = {
   newCoachingApplicant: {
-    prod: "https://end9hrmk62zmvqy.m.pipedream.net",
-    test: "https://end9hrmk62zmvqy.m.pipedream.net",
+    // prod: "https://end9hrmk62zmvqy.m.pipedream.net",
+    // test: "https://end9hrmk62zmvqy.m.pipedream.net",
+    prod: "https://hooks.zapier.com/hooks/catch/102352/b6ikwem",
+    test: "https://hooks.zapier.com/hooks/catch/102352/b6ikwem",
     method: "POST",
   },
 };
