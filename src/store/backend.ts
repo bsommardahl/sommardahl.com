@@ -6,7 +6,7 @@ const endpoints: any = {
     // test: "https://end9hrmk62zmvqy.m.pipedream.net",
     prod: "https://hooks.zapier.com/hooks/catch/102352/b6ikwem",
     test: "https://hooks.zapier.com/hooks/catch/102352/b6ikwem",
-    method: "POST",
+    method: "GET",
   },
 };
 
