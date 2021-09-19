@@ -10,21 +10,49 @@
         <div class="row h-100">
           <div class="col my-auto big-message">
             <Logo color="white" :width="250" class="landing-logo mb-3" />
+            <h2 class="mt-5 text-center">Dev Amplifier</h2>
+            <h5 class="mt-3 mb-3">Developer Coaching Program</h5>
             <video-embed
               :params="{ autoplay: 0 }"
               src="https://youtu.be/az97HgkS-sk"
             ></video-embed>
           </div>
-
+          <div class="col-1"></div>
           <div class="col-4 d-none d-lg-block my-auto apply">
-            <div class="start-application-form">
-              <h2 class="card-title text-center">FREE Coaching Session</h2>
-              <StartCoachingApplicationForm
-                @submitted="startCoachingApplication"
-                submitButtonLabel="Schedule 1st Session"
-                source="CoachingLandingAug2021"
-              />
-            </div>
+            <StartCoachingApplicationForm
+              @submitted="startCoachingApplication"
+              submitButtonLabel="Schedule FREE Session"
+              source="CoachingLandingAug2021"
+              :hideFormOnLoad="true"
+              title="FREE Coaching Session"
+              :buttonBlock="true"
+              :preventHorizontal="true"
+            >
+              <div class="big-text">
+                <h2>I believe...</h2>
+                <ul class="mt-4">
+                  <li class="mt-2">
+                    <strong>Most</strong> software developers leave their growth
+                    up to chance.
+                  </li>
+                  <li class="mt-2">
+                    <strong>Everyone</strong> has skill gaps.
+                    <strong>Most</strong> are good at hiding them.
+                    <strong>Few</strong>
+                    will fill them.
+                  </li>
+                  <li class="mt-2">
+                    Software developers can advance <strong>WAY</strong> faster
+                    than they often do.
+                  </li>
+
+                  <li class="mt-2">
+                    <strong>EVERY</strong> software developer needs a coach!
+                  </li>
+                </ul>
+                <h4 class="mt-4">Sign up today for a free coaching session!</h4>
+              </div>
+            </StartCoachingApplicationForm>
           </div>
         </div>
       </div>
@@ -33,12 +61,11 @@
     <div class="container mt-5">
       <div class="row">
         <div class="col col-md-7">
-          <h1 class="text-center">Dev Amplifier</h1>
-          <p>
-            The <strong>step-by-step</strong> coaching program that drives
-            developers to become more effective, while providing them with all
-            the necessary tools and education to grow into the next level in a
-            fraction of the time.
+          <p class="text-large">
+            Dev Amplifier is the <strong>step-by-step</strong> coaching program
+            that drives developers to become more effective, while providing
+            them with all the necessary tools and education to grow into the
+            next level in a fraction of the time.
           </p>
           <Unsplash
             imageId="FlPc9_VocJ4"
@@ -50,29 +77,34 @@
           />
         </div>
         <div class="col">
-          <h3>Intentional Coaching Inspires Seniority!</h3>
+          <StartCoachingApplicationForm
+            @submitted="startCoachingApplication"
+            submitButtonLabel="Schedule 1st Session"
+            source="CoachingLandingAug2021"
+            :hideFormOnLoad="true"
+            title="FREE Coaching Session"
+            :buttonBlock="true"
+            :preventHorizontal="true"
+          >
+            <h3>EVERY Developer Needs a Coach</h3>
 
-          In the Dev Amplifier coaching program, you get:
-          <ul>
-            <li>Weekly accountability and coaching sessions</li>
-            <li>Access to library of previous coaching sessions</li>
-            <li>Weekly stretch assignments</li>
-            <li>Annual seniority-gap assessment and career coaching</li>
-            <li>
-              Access to our community of like-minded aspiring senior developers
-            </li>
-            <li>Access to member-only enrichment events</li>
-            <li>Access to invite-only Sommardahl Academy Fellowship</li>
-          </ul>
-          <div class="mt-5 text-center">
-            <h3 class="">It's only $83/month!</h3>
-
-            <a
-              @click="goto('apply')"
-              class="mt-3 btn btn-lg btn-primary text-center"
-              >Schedule 1st Session</a
-            >
-          </div>
+            In the Dev Amplifier coaching program, you get:
+            <ul>
+              <li>Weekly accountability and coaching sessions</li>
+              <li>Access to library of previous coaching sessions</li>
+              <li>Weekly stretch assignments</li>
+              <li>Annual seniority-gap assessment and career coaching</li>
+              <li>
+                Access to our community of like-minded aspiring senior
+                developers
+              </li>
+              <li>Access to member-only enrichment events</li>
+              <li>Access to invite-only Sommardahl Academy Fellowship</li>
+            </ul>
+            <div class="mt-5 text-center">
+              <h3 class="">It's only $83/month!</h3>
+            </div>
+          </StartCoachingApplicationForm>
         </div>
       </div>
     </div>
@@ -191,16 +223,7 @@ export default {
     clearApplicant() {
       this.hasApplied = false;
     },
-    async scheduleFellowshipCall() {
-      const applicant = this.getApplicant || {};
-      let url = `https://calendly.com/sommardahl-academy/fellowship-intro`;
-      if (applicant) {
-        url += `?name=${encodeURI(applicant.first)}%20${encodeURI(
-          applicant.last
-        )}&email=${encodeURI(applicant.email)}`;
-      }
-      window.location = url;
-    },
+
     goto(el) {
       function isHidden(el) {
         return el.offsetParent === null;
@@ -238,8 +261,6 @@ export default {
 
     .title {
       text-align: left;
-      padding-top: 30px;
-      padding-bottom: 20px;
     }
     .item {
       padding-bottom: 5px;
@@ -252,6 +273,10 @@ export default {
         padding-left: 15px;
       }
     }
+  }
+
+  .start-application-form {
+    margin-top: 40px;
   }
 
   h1,

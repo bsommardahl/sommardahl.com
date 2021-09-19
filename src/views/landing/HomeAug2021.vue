@@ -10,43 +10,40 @@
         <div class="row h-100">
           <div class="col my-auto big-message">
             <Logo color="white" :width="250" class="landing-logo mb-3" />
-            <div class>
+            <div class="mb-2">
               <h3 class="text-left action">Level-up your game</h3>
               <h1 class="text-left action">Find your Drive</h1>
               <h3 class="text-left action">Gain Seniority</h3>
             </div>
-            <div class="checklist">
-              <div class="title">
-                Join the coaching program that can make it happen!
+            <StartCoachingApplicationForm
+              @submitted="startCoachingApplication"
+              submitButtonLabel="Schedule FREE Session"
+              source="CoachingLandingAug2021"
+              title="FREE Coaching Session"
+              :hideFormOnLoad="true"
+            >
+              <div class="checklist">
+                <div class="title">
+                  Join the coaching program that can make it happen!
+                </div>
+                <div class="item">
+                  <Icon name="checkbox" />
+                  <span>Weekly Coaching</span>
+                </div>
+                <div class="item">
+                  <Icon name="checkbox" />
+                  <span>Stretch Assignments</span>
+                </div>
+                <div class="item">
+                  <Icon name="checkbox" />
+                  <span>Growth Assessments</span>
+                </div>
+                <div class="item">
+                  <Icon name="checkbox" />
+                  <span>Like-Minded Community</span>
+                </div>
               </div>
-              <div class="item">
-                <Icon name="checkbox" />
-                <span>Weekly Coaching</span>
-              </div>
-              <div class="item">
-                <Icon name="checkbox" />
-                <span>Stretch Assignments</span>
-              </div>
-              <div class="item">
-                <Icon name="checkbox" />
-                <span>Growth Assessments</span>
-              </div>
-              <div class="item">
-                <Icon name="checkbox" />
-                <span>Like-Minded Community</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-5 d-none d-lg-block my-auto apply">
-            <div class="start-application-form">
-              <h2 class="card-title text-center">FREE Coaching Session</h2>
-              <StartCoachingApplicationForm
-                @submitted="startCoachingApplication"
-                submitButtonLabel="Schedule 1st Session"
-                source="CoachingLandingAug2021"
-              />
-            </div>
+            </StartCoachingApplicationForm>
           </div>
         </div>
       </div>
@@ -55,20 +52,25 @@
     <div class="container d-block d-lg-none mt-5">
       <div class="row justify-content-center">
         <div class="col-10 bg-periwinkle shadow border p-4">
-          <div class="start-application-form">
-            <h2 class="card-title text-center">FREE Coaching Session</h2>
-            <StartCoachingApplicationForm
-              @submitted="startCoachingApplication"
-              submitButtonLabel="Schedule 1st Session"
-              source="CoachingLandingAug2021"
-            />
-          </div>
+          <StartCoachingApplicationForm
+            @submitted="startCoachingApplication"
+            submitButtonLabel="Schedule FREE Session"
+            source="CoachingLandingAug2021"
+            title="FREE Coaching Session"
+            :hideFormOnLoad="true"
+          />
         </div>
       </div>
     </div>
 
     <div class="container mt-5">
-      <div class="text-center">
+      <div class="row">
+        <video-embed
+          :params="{ autoplay: 0 }"
+          src="https://youtu.be/az97HgkS-sk"
+        ></video-embed>
+      </div>
+      <div class="text-center mt-5">
         <h1>Find your drive</h1>
         <h4>at any commitment level</h4>
       </div>
@@ -106,22 +108,31 @@
             subtitle="Dev Amplifier"
             icon="mentorscreen"
           >
-            <div class="pillar-text">
-              Coaching and accountability program for those who are serious
-              about amplifying their growth.
-            </div>
+            <StartCoachingApplicationForm
+              @submitted="startCoachingApplication"
+              submitButtonLabel="Start Growing"
+              showFormButtonLabel="Request Coaching Session"
+              source="CoachingLandingAug2021"
+              title="Get a FREE Coaching Session"
+              :hideFormOnLoad="true"
+              :preventHorizontal="true"
+            >
+              <div class="pillar-text">
+                Coaching and accountability program for those who are serious
+                about amplifying their growth.
+              </div>
 
-            <div class="pillar-price">
-              <h1 class="mt-3 mb-0">
-                <Money :amount="83" />
-              </h1>
-              <div>per month</div>
-            </div>
-
+              <div class="pillar-price">
+                <h1 class="mt-3 mb-0">
+                  <Money :amount="83" />
+                </h1>
+                <div>per month</div>
+              </div>
+            </StartCoachingApplicationForm>
             <div class="text-center mt-3">
-              <a @click="goto('apply')" class="btn btn-lg btn-primary"
-                >Schedule 1st Session</a
-              >
+              <!-- <a @click="goto('apply')" class="btn btn-lg btn-primary"
+                  >Schedule 1st Session</a
+                > -->
               <p class="mt-3">
                 <router-link to="programs/coaching" class=""
                   >Learn More</router-link
@@ -252,6 +263,18 @@ export default {
   min-height: 80px;
 }
 
+.pillar-body {
+  .cta-component {
+    .privacy {
+      font-size: 0.8em;
+      text-shadow: none;
+      a {
+        color: $primary;
+      }
+    }
+  }
+}
+
 .level-up-landing-hero {
   .thanks-box {
     background-color: rgba(255, 255, 255, 0.3);
@@ -264,6 +287,10 @@ export default {
     }
   }
 
+  .start-application-form {
+    margin-top: 40px;
+  }
+
   .checklist {
     font-size: 1.6rem;
     @media (max-width: 800px) {
@@ -272,8 +299,6 @@ export default {
 
     .title {
       text-align: left;
-      padding-top: 30px;
-      padding-bottom: 20px;
     }
     .item {
       padding-bottom: 5px;
@@ -284,40 +309,6 @@ export default {
       }
       span {
         padding-left: 15px;
-      }
-    }
-  }
-
-  .start-application-form {
-    padding: 1em;
-    background-color: rgba(255, 255, 255, 0.4);
-
-    form {
-      padding: 0px 1vw;
-    }
-    .btn-cta {
-      background-color: rgb(255, 82, 28);
-      color: white;
-      font-weight: 900;
-    }
-
-    .form-label-group {
-      margin-bottom: 10px;
-
-      label {
-        //font-size: 0.5em;
-        //text-transform: capitalize;
-        margin-bottom: 0px;
-      }
-    }
-    .cta {
-      margin-top: 20px;
-    }
-    .privacy {
-      font-size: 0.8em;
-      text-shadow: none;
-      a {
-        color: #eee;
       }
     }
   }
