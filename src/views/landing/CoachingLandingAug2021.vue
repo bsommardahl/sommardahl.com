@@ -1,82 +1,77 @@
 <template>
   <div>
-    <Hero
-      class="landing-page-hero"
-      :unsplashIds="['gTs2w7bu3Qo', '49UXHs41UPI', 'G1N9kDHqBrQ']"
-      height="80vh"
-      backgroundColor="rgba(25, 32, 71,0.7)"
-    >
-      <div class="container">
-        <div class="row h-100">
-          <div class="col my-auto big-message">
-            <Logo color="white" :width="250" class="landing-logo mb-3" />
-            <h2 class="mt-5 text-center">Dev Amplifier</h2>
-            <h5 class="mt-3 mb-3">Developer Coaching Program</h5>
-            <video-embed
-              :params="{ autoplay: 0 }"
-              src="https://youtu.be/az97HgkS-sk"
-            ></video-embed>
-          </div>
-          <div class="col-1"></div>
-          <div class="col-4 d-none d-lg-block my-auto apply">
-            <StartCoachingApplicationForm
-              @submitted="startCoachingApplication"
-              submitButtonLabel="Schedule FREE Session"
-              source="CoachingLandingAug2021"
-              :hideFormOnLoad="true"
-              title="FREE Coaching Session"
-              :buttonBlock="true"
-              :preventHorizontal="true"
-            >
-              <div class="big-text">
-                <h2>I believe...</h2>
-                <ul class="mt-4">
-                  <li class="mt-2">
-                    <strong>Most</strong> software developers leave their growth
-                    up to chance.
-                  </li>
-                  <li class="mt-2">
-                    <strong>Everyone</strong> has skill gaps.
-                    <strong>Most</strong> are good at hiding them.
-                    <strong>Few</strong>
-                    will fill them.
-                  </li>
-                  <li class="mt-2">
-                    Software developers can advance <strong>WAY</strong> faster
-                    than they often do.
-                  </li>
-
-                  <li class="mt-2">
-                    <strong>EVERY</strong> software developer needs a coach!
-                  </li>
-                </ul>
-                <h4 class="mt-4">Sign up today for a free coaching session!</h4>
-              </div>
-            </StartCoachingApplicationForm>
-          </div>
-        </div>
-      </div>
-    </Hero>
+    <CoachingProgramCTAHero />
 
     <div class="container mt-5">
-      <div class="row">
-        <div class="col col-md-7">
-          <p class="text-large">
+      <div class="row justify-content-center">
+        <div class="">
+          <h3 class="text-center">EVERY Developer Needs a Coach</h3>
+
+          <p class="">
             Dev Amplifier is the <strong>step-by-step</strong> coaching program
             that drives developers to become more effective, while providing
             them with all the necessary tools and education to grow into the
             next level in a fraction of the time.
           </p>
-          <Unsplash
-            imageId="FlPc9_VocJ4"
-            align="left"
-            description="Every software developer needs a coach."
-            width="100%"
-            imageClass="card-img-top"
-            :thumbnail="false"
-          />
+          <!-- <div class="d-block d-md-none">
+            <Unsplash
+              imageId="FlPc9_VocJ4"
+              align="left"
+              description="Every software developer needs a coach."
+              width="100%"
+              imageClass="card-img-top"
+              :thumbnail="false"
+            />
+          </div> -->
         </div>
-        <div class="col">
+        <div class="col-1 d-block d-md-none"></div>
+        <div class="col-12 col-md-6">
+          <div class="">
+            <div class="big-text">
+              <h2 class="text-uppercase">We believe...</h2>
+              <ul class="mt-4">
+                <li class="mt-2">
+                  <strong>Most</strong> software developers leave their growth
+                  up to chance.
+                </li>
+                <li class="mt-2">
+                  <strong>Everyone</strong> has skill gaps.
+                  <strong>Most</strong> are good at hiding them.
+                  <strong>Few</strong>
+                  will fill them.
+                </li>
+                <li class="mt-2">
+                  Software developers can advance <strong>WAY</strong> faster
+                  than they often do.
+                </li>
+
+                <li class="mt-2">
+                  <strong>EVERY</strong> software developer needs a coach!
+                </li>
+              </ul>
+              <!-- <h4 class="mt-4">Sign up today for a free coaching session!</h4> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <h2 class="text-uppercase">In this program, you get:</h2>
+          <ul>
+            <li>Weekly accountability and coaching sessions</li>
+            <li>Access to library of previous coaching sessions</li>
+            <li>Weekly stretch assignments</li>
+            <li>Annual seniority-gap assessment and career coaching</li>
+            <li>
+              Access to our community of like-minded aspiring senior developers
+            </li>
+            <li>Access to member-only enrichment events</li>
+            <li>Access to invite-only Sommardahl Academy Fellowship</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-5">
           <StartCoachingApplicationForm
             @submitted="startCoachingApplication"
             submitButtonLabel="Schedule 1st Session"
@@ -84,23 +79,7 @@
             :hideFormOnLoad="true"
             title="FREE Coaching Session"
             :buttonBlock="true"
-            :preventHorizontal="true"
           >
-            <h3>EVERY Developer Needs a Coach</h3>
-
-            In the Dev Amplifier coaching program, you get:
-            <ul>
-              <li>Weekly accountability and coaching sessions</li>
-              <li>Access to library of previous coaching sessions</li>
-              <li>Weekly stretch assignments</li>
-              <li>Annual seniority-gap assessment and career coaching</li>
-              <li>
-                Access to our community of like-minded aspiring senior
-                developers
-              </li>
-              <li>Access to member-only enrichment events</li>
-              <li>Access to invite-only Sommardahl Academy Fellowship</li>
-            </ul>
             <div class="mt-5 text-center">
               <h3 class="">It's only $83/month!</h3>
             </div>
@@ -108,23 +87,11 @@
         </div>
       </div>
     </div>
-    <div class="container mt-5">
-      <div class="row">
-        <div class="col">
-          <!-- <a
-            href="https://buy.stripe.com/eVacNxejccdCbMQaEE"
-            class="btn btn-primary"
-          >
-            Subscribe
-          </a> -->
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
-import Hero from "@/components/Hero";
+import CoachingProgramCTAHero from "@/components/CoachingProgramCTAHero";
 import StartCoachingApplicationForm from "@/views/landing/StartCoachingApplicationForm";
 import Thanks from "@/views/landing/Thanks";
 import { mapGetters } from "vuex";
@@ -143,7 +110,7 @@ import PillarPrimary from "@/components/PillarPrimary";
 
 export default {
   components: {
-    Hero,
+    CoachingProgramCTAHero,
     Thanks,
     StartCoachingApplicationForm,
     Icon,

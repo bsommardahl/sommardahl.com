@@ -1,67 +1,6 @@
 <template>
   <div>
-    <Hero
-      class="level-up-landing-hero"
-      :unsplashIds="['gTs2w7bu3Qo', '49UXHs41UPI', 'G1N9kDHqBrQ']"
-      height="100vh"
-      backgroundColor="rgba(25, 32, 71,0.7)"
-    >
-      <div class="container">
-        <div class="row h-100">
-          <div class="col my-auto big-message">
-            <Logo color="white" :width="250" class="landing-logo mb-3" />
-            <div class="mb-2">
-              <h3 class="text-left action">Level-up your game</h3>
-              <h1 class="text-left action">Find your Drive</h1>
-              <h3 class="text-left action">Gain Seniority</h3>
-            </div>
-            <StartCoachingApplicationForm
-              @submitted="startCoachingApplication"
-              submitButtonLabel="Schedule FREE Session"
-              source="CoachingLandingAug2021"
-              title="FREE Coaching Session"
-              :hideFormOnLoad="true"
-            >
-              <div class="checklist">
-                <div class="title">
-                  Join the coaching program that can make it happen!
-                </div>
-                <div class="item">
-                  <Icon name="checkbox" />
-                  <span>Weekly Coaching</span>
-                </div>
-                <div class="item">
-                  <Icon name="checkbox" />
-                  <span>Stretch Assignments</span>
-                </div>
-                <div class="item">
-                  <Icon name="checkbox" />
-                  <span>Growth Assessments</span>
-                </div>
-                <div class="item">
-                  <Icon name="checkbox" />
-                  <span>Like-Minded Community</span>
-                </div>
-              </div>
-            </StartCoachingApplicationForm>
-          </div>
-        </div>
-      </div>
-    </Hero>
-
-    <div class="container d-block d-lg-none mt-5">
-      <div class="row justify-content-center">
-        <div class="col-10 bg-periwinkle shadow border p-4">
-          <StartCoachingApplicationForm
-            @submitted="startCoachingApplication"
-            submitButtonLabel="Schedule FREE Session"
-            source="CoachingLandingAug2021"
-            title="FREE Coaching Session"
-            :hideFormOnLoad="true"
-          />
-        </div>
-      </div>
-    </div>
+    <CoachingProgramCTAHero />
 
     <div class="container mt-5">
       <div class="row">
@@ -71,7 +10,7 @@
         ></video-embed>
       </div>
       <div class="text-center mt-5">
-        <h1>Find your drive</h1>
+        <h1 class="text-uppercase">Find your drive</h1>
         <h4>at any commitment level</h4>
       </div>
       <div class="row mt-5 justify-content-center">
@@ -152,7 +91,7 @@
             </div>
 
             <div class="pillar-price">
-              <h2 class="mt-3">Let's Talk</h2>
+              <h2 class="text-uppercase mt-3">Let's Talk</h2>
             </div>
 
             <div class="text-center mt-3">
@@ -175,9 +114,9 @@
 </template>
 
 <script>
-import Hero from "@/components/Hero";
-import StartCoachingApplicationForm from "@/views/landing/StartCoachingApplicationForm";
+import CoachingProgramCTAHero from "@/components/CoachingProgramCTAHero";
 import Thanks from "@/views/landing/Thanks";
+import StartCoachingApplicationForm from "@/views/landing/StartCoachingApplicationForm";
 import { mapGetters } from "vuex";
 import Icon from "@/components/Icon";
 import Logo from "@/components/Logo";
@@ -194,9 +133,9 @@ import Money from "@/components/Money";
 
 export default {
   components: {
-    Hero,
     Thanks,
     StartCoachingApplicationForm,
+    CoachingProgramCTAHero,
     Icon,
     Logo,
     Thanks,
