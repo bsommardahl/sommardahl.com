@@ -2,13 +2,7 @@
   <div>
     <CoachingProgramCTAHero />
 
-    <div class="container mt-5">
-      <div class="row">
-        <video-embed
-          :params="{ autoplay: 0 }"
-          src="https://youtu.be/az97HgkS-sk"
-        ></video-embed>
-      </div>
+    <div class="container">
       <div class="text-center mt-5">
         <h1 class="text-uppercase">Find your drive</h1>
         <h4>at any commitment level</h4>

@@ -8,6 +8,7 @@ import FAQs from "../views/FAQs.vue";
 import Blog from "../views/Blog.vue";
 import Method from "../views/Method.vue";
 import Testimonials from "../views/Testimonials.vue";
+import Byron from "../views/Byron.vue";
 import CallBack from "../views/CallBack.vue";
 import AdmissionsCallBack from "../views/AdmissionsCallBack.vue";
 import AdmissionsCallBackSetup from "../views/AdmissionsCallBackSetup.vue";
@@ -113,6 +114,11 @@ const routes = [
     path: "/blog",
     name: "Blog",
     component: Blog,
+  },
+  {
+    path: "/byron",
+    name: "Byron",
+    component: Byron,
   },
   {
     path: "/curriculum",

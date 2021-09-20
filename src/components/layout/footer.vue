@@ -56,12 +56,14 @@
         </div> -->
         <div class="col-12 col-md-2 mb-5">
           <h4>About Us</h4>
-          <!-- <p>
+          <p>
             <router-link to="/byron">Byron's Story</router-link>
           </p>
-          <p>
+
+          <!-- <p>
             <router-link to="/process">Process</router-link>
-          </p> -->
+          </p>
+          -->
           <p>
             <!-- <router-link to="/events" disabled>Events</router-link> --><a
               href="https://www.meetup.com/sommardahl-academy/events"

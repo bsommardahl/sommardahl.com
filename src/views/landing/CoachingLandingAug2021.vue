@@ -1,19 +1,135 @@
 <template>
   <div>
-    <CoachingProgramCTAHero />
+    <Hero
+      class="level-up-landing-hero"
+      :unsplashIds="['gTs2w7bu3Qo', '49UXHs41UPI', 'G1N9kDHqBrQ']"
+      height="50vh"
+      backgroundColor="rgba(25, 32, 71,0.7)"
+    >
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-12 col-md-7 my-auto big-message">
+            <Logo color="white" :width="250" class="landing-logo mb-3" />
+            <div class="mb-2">
+              <h3 class="text-left action text-uppercase">
+                Level Up with the
+              </h3>
+              <h1 class="text-left action text-uppercase">Dev Amplifier</h1>
+              <!-- <h3 class="text-left action text-uppercase">Gain Seniority</h3> -->
+            </div>
 
-    <div class="container mt-5">
+            <div class="checklist">
+              <!-- <div class="title">
+                Join the coaching program that can make it happen!
+              </div> -->
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Weekly Coaching Sessions</span>
+              </div>
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Quests &amp; Assignments</span>
+              </div>
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Growth Assessments</span>
+              </div>
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Like-Minded Community</span>
+              </div>
+              <div class="item">
+                <Icon name="checkbox" />
+                <span>Nights &amp; Weekends</span>
+              </div>
+            </div>
+          </div>
+          <div class="d-none d-md-block col-md-5 text-center">
+            <StartCoachingApplicationForm
+              submitButtonLabel="Schedule FREE Session"
+              source="CoachingLandingAug2021"
+              title="FREE Coaching Session"
+              :hideFormOnLoad="true"
+              :preventHorizontal="true"
+              ><video-embed
+                :params="{ autoplay: 0 }"
+                src="https://youtu.be/j6HPJzYk-cc"
+              ></video-embed>
+            </StartCoachingApplicationForm>
+          </div>
+        </div>
+      </div>
+    </Hero>
+
+    <div class="container">
       <div class="row justify-content-center">
-        <div class="">
-          <h3 class="text-center">EVERY Developer Needs a Coach</h3>
+        <div class="col d-md-none text-center mt-5">
+          <StartCoachingApplicationForm
+            submitButtonLabel="Schedule FREE Session"
+            source="CoachingLandingAug2021"
+            title="FREE Coaching Session"
+            :hideFormOnLoad="true"
+            :preventHorizontal="true"
+            ><video-embed
+              :params="{ autoplay: 0 }"
+              src="https://youtu.be/j6HPJzYk-cc"
+            ></video-embed>
+          </StartCoachingApplicationForm>
+        </div>
+      </div>
+      <div class="row justify-content-center ">
+        <!-- <h1 class="uppercase text-center">The Dev Amplifier</h1>
+        <h3 class="text-center">EVERY Developer Needs a Coach</h3> -->
+        <div class="col mt-5">
+          <h4 class="text-center">
+            The Dev Amplifier is the <strong>step-by-step</strong> coaching
+            program that drives developers to become more effective, while
+            providing them with all the necessary tools and education to grow
+            into the next level in a fraction of the time.
+          </h4>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary-soft border shadow pt-3 pb-5 mt-5">
+      <div class="container mt-5">
+        <h3 class="text-center">Weekly Growth - Nights and Weekends</h3>
+        <div class="row justify-content-center mt-5 ">
+          <div
+            class="col-4 col-md-3 text-center"
+            v-for="f in features"
+            :key="f.title"
+          >
+            <Icon :name="f.icon" :size="80" />
+            <p class="mt-2">{{ f.title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pb-5">
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col col-sm-8 col-md-6">
+            <StartCoachingApplicationForm
+              @submitted="startCoachingApplication"
+              submitButtonLabel="Schedule 1st Session"
+              source="CoachingLandingAug2021"
+              :hideFormOnLoad="true"
+              title="FREE Coaching Session"
+              :buttonBlock="true"
+            >
+              <div class="mt-5 text-center">
+                <h3 class="">It's only $83/month!</h3>
+              </div>
+            </StartCoachingApplicationForm>
+          </div>
+        </div>
+      </div>
+    </div>
 
-          <p class="">
-            Dev Amplifier is the <strong>step-by-step</strong> coaching program
-            that drives developers to become more effective, while providing
-            them with all the necessary tools and education to grow into the
-            next level in a fraction of the time.
-          </p>
-          <!-- <div class="d-block d-md-none">
+    <div class="bg-primary-soft border shadow pt-3 pb-5">
+      <div class="container">
+        <div class="row ">
+          <div class="col-12 col-md-6 mt-5">
             <Unsplash
               imageId="FlPc9_VocJ4"
               align="left"
@@ -22,11 +138,8 @@
               imageClass="card-img-top"
               :thumbnail="false"
             />
-          </div> -->
-        </div>
-        <div class="col-1 d-block d-md-none"></div>
-        <div class="col-12 col-md-6">
-          <div class="">
+          </div>
+          <div class="col-12 col-md-6 mt-5">
             <div class="big-text">
               <h2 class="text-uppercase">We believe...</h2>
               <ul class="mt-4">
@@ -49,41 +162,8 @@
                   <strong>EVERY</strong> software developer needs a coach!
                 </li>
               </ul>
-              <!-- <h4 class="mt-4">Sign up today for a free coaching session!</h4> -->
             </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-          <h2 class="text-uppercase">In this program, you get:</h2>
-          <ul>
-            <li>Weekly accountability and coaching sessions</li>
-            <li>Access to library of previous coaching sessions</li>
-            <li>Weekly stretch assignments</li>
-            <li>Annual seniority-gap assessment and career coaching</li>
-            <li>
-              Access to our community of like-minded aspiring senior developers
-            </li>
-            <li>Access to member-only enrichment events</li>
-            <li>Access to invite-only Sommardahl Academy Fellowship</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-sm-8 col-md-5">
-          <StartCoachingApplicationForm
-            @submitted="startCoachingApplication"
-            submitButtonLabel="Schedule 1st Session"
-            source="CoachingLandingAug2021"
-            :hideFormOnLoad="true"
-            title="FREE Coaching Session"
-            :buttonBlock="true"
-          >
-            <div class="mt-5 text-center">
-              <h3 class="">It's only $83/month!</h3>
-            </div>
-          </StartCoachingApplicationForm>
         </div>
       </div>
     </div>
@@ -91,7 +171,7 @@
 </template>
 
 <script>
-import CoachingProgramCTAHero from "@/components/CoachingProgramCTAHero";
+import Hero from "@/components/Hero";
 import StartCoachingApplicationForm from "@/views/landing/StartCoachingApplicationForm";
 import Thanks from "@/views/landing/Thanks";
 import { mapGetters } from "vuex";
@@ -110,7 +190,7 @@ import PillarPrimary from "@/components/PillarPrimary";
 
 export default {
   components: {
-    CoachingProgramCTAHero,
+    Hero,
     Thanks,
     StartCoachingApplicationForm,
     Icon,
@@ -131,50 +211,50 @@ export default {
     hasApplied: false,
     features: [
       {
-        icon: "",
+        icon: "meeting",
         title: "Weekly Coaching",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
+        icon: "design",
         title: "Video Library",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
-        title: "Stretch Assignments",
+        icon: "running",
+        title: "Weekly Quests",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
+        icon: "test",
         title: "Gap Assessment",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
+        icon: "mentorscreen",
         title: "Career Coaching",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
+        icon: "chat",
         title: "Like-Minded Community",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
+        icon: "class",
         title: "Enrichment Events",
         description: "",
         galleryImageUrl: "",
       },
       {
-        icon: "",
-        title: "Fellowship Invite",
+        icon: "huddle",
+        title: "Invite-Only Fellowships",
         description: "",
         galleryImageUrl: "",
       },

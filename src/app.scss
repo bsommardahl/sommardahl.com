@@ -111,3 +111,14 @@ h6 {
   background-color: $lilac-soft;
   fill: $lilac;
 }
+.bg-primary-soft {
+  background-color: $primary-soft;
+  fill: $primary;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $primary;
+  }
+}
