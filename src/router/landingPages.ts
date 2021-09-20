@@ -1,11 +1,10 @@
-import LandingContainer from "../views/landing/LandingContainer.vue";
 import CoachingLandingAug2021 from "../views/landing/CoachingLandingAug2021.vue";
 import PodcastLandingAug2021 from "../views/landing/PodcastLandingAug2021.vue";
 import FellowshipLandingAug2021 from "../views/landing/FellowshipLandingAug2021.vue";
 import EventsAug2021 from "../views/landing/EventsAug2021.vue";
 import URL_Builder from "../views/url-builder.vue";
 import Home from "../views/Home.vue";
-import Loading from "../views/landing/Loading.vue";
+import InitialSessionConfirmed from "../views/InitialSessionConfirmed.vue";
 
 const routes: Array<any> = [
   {
@@ -36,6 +35,10 @@ const routes: Array<any> = [
     // meta: {
     //   layout: "no-nav",
     // },
+  },
+  {
+    path: "/programs/coaching/initialSessionConfirmed",
+    component: InitialSessionConfirmed,
   },
   {
     path: "/events",

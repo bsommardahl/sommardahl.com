@@ -12,6 +12,7 @@ import Byron from "../views/Byron.vue";
 import CallBack from "../views/CallBack.vue";
 import AdmissionsCallBack from "../views/AdmissionsCallBack.vue";
 import AdmissionsCallBackSetup from "../views/AdmissionsCallBackSetup.vue";
+
 import HowItWorks from "../views/HowItWorks.vue";
 import Pathways from "../views/Pathways.vue";
 import EnrollmentContainer from "../views/enroll/EnrollmentContainer.vue";
