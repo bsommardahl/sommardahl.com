@@ -105,10 +105,10 @@
         </div>
       </div>
     </div>
-    <div class="pb-5">
+    <div class="bg-orange-soft pb-5">
       <div class="container ">
         <div class="row justify-content-center">
-          <div class="col col-sm-8 col-md-6">
+          <div class="col col-sm-8 col-md-6 mt-5 ">
             <StartCoachingApplicationForm
               @submitted="startCoachingApplication"
               submitButtonLabel="Schedule 1st Session"
@@ -116,8 +116,9 @@
               :hideFormOnLoad="true"
               title="FREE Coaching Session"
               :buttonBlock="true"
+              :preventHorizontal="true"
             >
-              <div class="mt-5 text-center">
+              <div class="text-center">
                 <h3 class="">It's only $83/month!</h3>
               </div>
             </StartCoachingApplicationForm>
