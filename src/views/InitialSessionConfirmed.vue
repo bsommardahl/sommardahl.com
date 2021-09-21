@@ -21,8 +21,8 @@
       </div>
     </div>
     <div class="bg-orange-soft shadow border mt-5 pt-5 pb-5">
-      <div class="container">
-        <h3 class="text-center">In the meantime...</h3>
+      <div class="container text-center">
+        <h3 class="">In the meantime...</h3>
         <p>
           While you prepare for the first coaching session, we recommend
           listening to a few episodes from Byron's podcast, "The Driven
