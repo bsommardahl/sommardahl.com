@@ -11,9 +11,7 @@
           <div class="col-12 col-md-7 my-auto big-message">
             <Logo color="white" :width="250" class="landing-logo mb-3" />
             <div class="mb-2">
-              <h3 class="text-left action text-uppercase">
-                Level Up with the
-              </h3>
+              <h3 class="text-left action text-uppercase">Level Up with the</h3>
               <h1 class="text-left action text-uppercase">Dev Amplifier</h1>
               <!-- <h3 class="text-left action text-uppercase">Gain Seniority</h3> -->
             </div>
@@ -77,7 +75,7 @@
           </StartCoachingApplicationForm>
         </div>
       </div>
-      <div class="row justify-content-center ">
+      <div class="row justify-content-center">
         <!-- <h1 class="uppercase text-center">The Dev Amplifier</h1>
         <h3 class="text-center">EVERY Developer Needs a Coach</h3> -->
         <div class="col mt-5">
@@ -93,7 +91,7 @@
     <div class="bg-primary-soft border shadow pt-3 pb-5 mt-5">
       <div class="container mt-5">
         <h3 class="text-center">Weekly Growth - Nights and Weekends</h3>
-        <div class="row justify-content-center mt-5 ">
+        <div class="row justify-content-center mt-5">
           <div
             class="col-4 col-md-3 text-center"
             v-for="f in features"
@@ -105,10 +103,11 @@
         </div>
       </div>
     </div>
+    <TestimonialsSection />
     <div class="bg-orange-soft pb-5">
-      <div class="container ">
+      <div class="container">
         <div class="row justify-content-center">
-          <div class="col col-sm-8 col-md-6 mt-5 ">
+          <div class="col col-sm-8 col-md-6 mt-5">
             <StartCoachingApplicationForm
               @submitted="startCoachingApplication"
               submitButtonLabel="Schedule 1st Session"
@@ -129,7 +128,7 @@
 
     <div class="bg-primary-soft border shadow pt-3 pb-5">
       <div class="container">
-        <div class="row ">
+        <div class="row">
           <div class="col-12 col-md-6 mt-5">
             <Unsplash
               imageId="FlPc9_VocJ4"

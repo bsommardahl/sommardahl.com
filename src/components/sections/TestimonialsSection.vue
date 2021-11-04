@@ -4,7 +4,7 @@
       <div class="container">
         <div class="pt-5 text-center">
           <h1>Here is what others have to say</h1>
-          <h5>Sommardahl Academy is a valuable experience!</h5>
+          <h5>Everyone needs a coach!</h5>
           <div class="mt-5">
             <TestimonialsCarousel />
           </div>
