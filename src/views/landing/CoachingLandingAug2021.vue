@@ -3,7 +3,7 @@
     <Hero
       class="level-up-landing-hero"
       :unsplashIds="['gTs2w7bu3Qo', '49UXHs41UPI', 'G1N9kDHqBrQ']"
-      height="50vh"
+      height="65vh"
       backgroundColor="rgba(25, 32, 71,0.7)"
     >
       <div class="container">
@@ -88,7 +88,29 @@
         </div>
       </div>
     </div>
-    <div class="bg-primary-soft border shadow pt-3 pb-5 mt-5">
+    <div class="bg-orange-soft pb-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col col-sm-8 col-md-6 mt-5">
+            <StartCoachingApplicationForm
+              @submitted="startCoachingApplication"
+              submitButtonLabel="Schedule 1st Session"
+              source="CoachingLandingAug2021"
+              :hideFormOnLoad="true"
+              title="FREE Coaching Session"
+              :buttonBlock="true"
+              :preventHorizontal="true"
+            >
+              <div class="text-center">
+                <h3 class="">It's only $83/month!</h3>
+              </div>
+            </StartCoachingApplicationForm>
+          </div>
+        </div>
+      </div>
+    </div>
+    <TwelveDimensionsSection />
+    <div class="bg-primary-soft border pt-3 pb-5 mt-5">
       <div class="container mt-5">
         <h3 class="text-center">Weekly Growth - Nights and Weekends</h3>
         <div class="row justify-content-center mt-5">
@@ -104,6 +126,7 @@
       </div>
     </div>
     <TestimonialsSection />
+
     <div class="bg-orange-soft pb-5">
       <div class="container">
         <div class="row justify-content-center">
@@ -151,11 +174,11 @@
                   <strong>Everyone</strong> has skill gaps.
                   <strong>Most</strong> are good at hiding them.
                   <strong>Few</strong>
-                  will fill them.
+                  will fill them (without coaching, that is).
                 </li>
                 <li class="mt-2">
                   Software developers can advance <strong>WAY</strong> faster
-                  than they often do.
+                  than they often do, but leave major efficiencies on the table.
                 </li>
 
                 <li class="mt-2">
@@ -185,6 +208,7 @@ import TechSection from "@/components/sections/tech";
 import CommercialSection from "@/components/sections/CommercialSection";
 import StatsSection from "@/components/sections/StatsSection";
 import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import TwelveDimensionsSection from "@/components/sections/TwelveDimensionsSection";
 import QandASection from "@/components/sections/QandASection";
 import PillarPrimary from "@/components/PillarPrimary";
 
@@ -193,6 +217,7 @@ export default {
     Hero,
     Thanks,
     StartCoachingApplicationForm,
+    TwelveDimensionsSection,
     Icon,
     Logo,
     Thanks,

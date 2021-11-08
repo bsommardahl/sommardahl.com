@@ -26,7 +26,12 @@
         <li class="nav-item">
           <a href="#" @click.prevent="goHome" class="nav-link">Home</a>
         </li>
-        <li class="nav-item dropdown">
+        <div class="nav-item">
+          <router-link to="/programs/podcast" class="nav-link"
+            >Podcast</router-link
+          >
+        </div>
+        <!-- <li class="nav-item dropdown">
           <a
             href="#"
             class="nav-link dropdown-toggle"
@@ -56,16 +61,19 @@
               >
             </div>
           </div>
-        </li>
+        </li> -->
 
-        <li class="nav-item">
-          <!-- <router-link to="/events" class="nav-link">Events</router-link> -->
+        <!-- <li class="nav-item">
           <a
             href="https://www.meetup.com/sommardahl-academy/events"
             target="_blank"
             class="nav-link"
             >Events</a
           >
+        </li> -->
+        <li class="nav-item">
+          <!-- <router-link to="/events" class="nav-link">Events</router-link> -->
+          <router-link to="/byron" class="nav-link">Byron's Story</router-link>
         </li>
 
         <!-- <div class="nav-item">
