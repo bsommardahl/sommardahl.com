@@ -110,23 +110,6 @@
       </div>
     </div>
     <TwelveDimensionsSection />
-    <div class="bg-primary-soft border pt-3 pb-5 mt-5">
-      <div class="container mt-5">
-        <h3 class="text-center">Weekly Growth - Nights and Weekends</h3>
-        <div class="row justify-content-center mt-5">
-          <div
-            class="col-4 col-md-3 text-center"
-            v-for="f in features"
-            :key="f.title"
-          >
-            <Icon :name="f.icon" :size="80" />
-            <p class="mt-2">{{ f.title }}</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <TestimonialsSection />
-
     <div class="bg-orange-soft pb-5">
       <div class="container">
         <div class="row justify-content-center">
@@ -148,6 +131,23 @@
         </div>
       </div>
     </div>
+
+    <div class="bg-primary-soft border pt-3 pb-5">
+      <div class="container mt-5">
+        <h3 class="text-center">Weekly Growth - Nights and Weekends</h3>
+        <div class="row justify-content-center mt-5">
+          <div
+            class="col-4 col-md-3 text-center"
+            v-for="f in features"
+            :key="f.title"
+          >
+            <Icon :name="f.icon" :size="80" />
+            <p class="mt-2">{{ f.title }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <TestimonialsSection />
 
     <div class="bg-primary-soft border shadow pt-3 pb-5">
       <div class="container">
