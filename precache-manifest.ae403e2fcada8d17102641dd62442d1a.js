@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/browserconfig.xml"
   },
   {
-    "revision": "3fb2b16ef00c8a356e6c",
-    "url": "/css/app.20d91fce.css"
+    "revision": "ba0395fb9539ccccedd7",
+    "url": "/css/app.53e442fd.css"
   },
   {
     "revision": "cf9bdea80c039ce95a84",
@@ -208,6 +208,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/blueprints.ed74dde4.svg"
   },
   {
+    "revision": "ba31186518b9e5b820051c307cfaeb00",
+    "url": "/img/brain.ba311865.svg"
+  },
+  {
     "revision": "2c1a73788e2c9a945d8e27de7704a1f3",
     "url": "/img/branch.2c1a7378.svg"
   },
@@ -288,6 +292,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/develop.2dfa4238.svg"
   },
   {
+    "revision": "9ae1677266a0f974b7233985ca8dbf99",
+    "url": "/img/driven.9ae16772.svg"
+  },
+  {
+    "revision": "d96a806139829b123b0f40c03d848653",
+    "url": "/img/experience.d96a8061.svg"
+  },
+  {
+    "revision": "49bf81c8790b66a1122b0b33199cfcc4",
+    "url": "/img/fire.49bf81c8.svg"
+  },
+  {
     "revision": "33783eeb835e30832aefb60b8f9692f8",
     "url": "/img/flux.33783eeb.svg"
   },
@@ -296,8 +312,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/fraction.90429e84.svg"
   },
   {
+    "revision": "2145f6eab2443ebd8cd23d9eb24305e4",
+    "url": "/img/growth.2145f6ea.svg"
+  },
+  {
     "revision": "79889824296cbbdd4f877df611daed4f",
     "url": "/img/hands.79889824.svg"
+  },
+  {
+    "revision": "4694c84e1638643dc8f33feb37081cc6",
+    "url": "/img/handshake.4694c84e.svg"
   },
   {
     "revision": "da89a423fb7ff76ae5b540b1da932b36",
@@ -338,6 +362,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0195582c81fb633a61b67a2927d61ce5",
     "url": "/img/headshots/yamil.jpeg"
+  },
+  {
+    "revision": "07162618d2641cb8dd49896a1524ab9e",
+    "url": "/img/heart.07162618.svg"
   },
   {
     "revision": "8754620295ca7a658a782a426ab79fb6",
@@ -382,6 +410,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "dc1cab1e6674594915b940862a71a97d",
     "url": "/img/javascript.dc1cab1e.svg"
+  },
+  {
+    "revision": "0e560020f9d95424bd365be8ca0e66e8",
+    "url": "/img/karate.0e560020.svg"
   },
   {
     "revision": "1fe3cf8a5a3c782dc2410f51648fd433",
@@ -446,6 +478,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "93ee6f48e1f242810ba86c7d218230a9",
     "url": "/img/okay.93ee6f48.svg"
+  },
+  {
+    "revision": "c9d070f751280b94ebb0edb4a03bf08d",
+    "url": "/img/orgtree.c9d070f7.svg"
   },
   {
     "revision": "95bafbb3ce175ef0f94534d01279fcea",
@@ -564,8 +600,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/podcast.fd302a8a.svg"
   },
   {
+    "revision": "54ee6fffd1cc70bdc17b5593e8060883",
+    "url": "/img/purpose.54ee6fff.svg"
+  },
+  {
     "revision": "4c1ba03ce2b78cef58f4fcf1ff47568b",
     "url": "/img/react.4c1ba03c.svg"
+  },
+  {
+    "revision": "099fb75984c76b188c6ab3eaf8eba0a5",
+    "url": "/img/recover.099fb759.svg"
   },
   {
     "revision": "8db6df79cc77f1f0400bbea9f3e7b967",
@@ -590,6 +634,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "1b19663336f2f38bca8ee099aed2877b",
     "url": "/img/security.1b196633.svg"
+  },
+  {
+    "revision": "74fded931454d6c5a470866133896725",
+    "url": "/img/serve.74fded93.svg"
   },
   {
     "revision": "87af8974d386fb9e35083102468180e3",
@@ -736,16 +784,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/walking.8775727f.svg"
   },
   {
+    "revision": "d45e325cdc4f6c335c41992dbc17fb8d",
+    "url": "/img/workout.d45e325c.svg"
+  },
+  {
     "revision": "579b70088e7945e30c1a9d740463d9db",
     "url": "/img/zero.579b7008.svg"
   },
   {
-    "revision": "ee460854a283b93573e5f0d1d1c0df4c",
+    "revision": "eeb9da168de9b77506172be76b048f70",
     "url": "/index.html"
   },
   {
-    "revision": "3fb2b16ef00c8a356e6c",
-    "url": "/js/app.7f14c6dc.js"
+    "revision": "ba0395fb9539ccccedd7",
+    "url": "/js/app.95ccd30c.js"
   },
   {
     "revision": "cf9bdea80c039ce95a84",

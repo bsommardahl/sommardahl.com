@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.344798247449ed14399e03e3637409fe.js"
+  "/precache-manifest.ae403e2fcada8d17102641dd62442d1a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "sommardahl-academy-website"});
