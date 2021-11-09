@@ -110,7 +110,7 @@
       </div>
     </div>
     <TwelveDimensionsSection />
-    <div class="bg-orange-soft pb-5">
+    <div class="bg-orange-soft pb-5 mt-5">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col col-sm-8 col-md-6 mt-5">
