@@ -2,8 +2,8 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- <div class="container"> -->
-    <a href="#" class="navbar-brand" @click.prevent="goHome">
-      <Logo :width="250" />
+    <a href="#" @click.prevent="goHome">
+      <Logo :height="50" :hideText="false" />
     </a>
     <button
       class="navbar-toggler navbar-toggler-right"

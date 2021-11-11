@@ -2,12 +2,12 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark text-white">
     <div class="text-center mb-5">
-      <img src="img/logo/emblem_white.png" width="50" />
+      <Logo :width="80" :hideText="true" />
     </div>
     <div class="container">
       <div class="row justify-content-md-center text-center">
         <div class="col-12 col-md-2 mb-5">
-          <h4>Sommardahl Academy</h4>
+          <h4>Dev Amplifier</h4>
           <p>
             <a href="#" @click.prevent="goHome">Home</a>
           </p>
@@ -122,7 +122,7 @@
         </div>
       </div>
       <div class="text-center">
-        <p>Copyright &copy; Sommardahl Academy LLC 2021</p>
+        <p>Dev Amplifier is Copyright &copy; Sommardahl Ventures LLC 2021</p>
       </div>
     </div>
     <!-- /.container -->
@@ -137,8 +137,10 @@ import {
   faYoutubeSquare,
 } from "@fortawesome/fontawesome-free-brands";
 import { mapGetters } from "vuex";
+import Logo from "@/components/Logo.vue";
 
 export default {
+  components: { Logo },
   data: () => ({
     faFacebookSquare,
     faInstagram,

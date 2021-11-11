@@ -5,9 +5,12 @@ $theme-colors: (
 );
 @import "~bootstrap";
 @import "~bootstrap-vue";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 body {
   background-color: $superMuted;
+  color: $blue;
+  font-family: "Open Sans", sans-serif;
 }
 #app {
   -webkit-font-smoothing: antialiased;
@@ -54,6 +57,7 @@ body {
 
 .bg-navyblue {
   background-color: $navyBlue;
+  color: $black;
 }
 h1,
 h2,
@@ -61,10 +65,11 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: 0.3rem;
+letter-spacing: 0.3rem;
   font-weight: 900;
   font-size: 3em;
   margin-bottom: 0.3em;
+  color: $black; 
 }
 h2 {
   font-size: 2.5em;
@@ -124,13 +129,13 @@ h6 {
 }
 
 .bg-orange-soft {
-  background-color: $orange-soft;
-  fill: $orange;
+  background-color: $blue-soft;
+  fill: $blue;
   h1,
   h2,
   h3,
   h4,
   h5 {
-    color: $orange;
+    color: $blue;
   }
 }

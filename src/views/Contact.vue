@@ -3,7 +3,7 @@
     <!-- Page Heading/Breadcrumbs -->
     <h1 class="mt-4 mb-3">
       Contact
-      <!-- <small>Sommardahl Academy</small> -->
+      <!-- <small>Sommardahl Ventures</small> -->
     </h1>
 
     <ol class="breadcrumb">
@@ -22,7 +22,7 @@
           width="600"
           height="250"
           frameborder="0"
-          style="border:0;"
+          style="border: 0"
           allowfullscreen
           aria-hidden="false"
           tabindex="0"
@@ -32,7 +32,8 @@
       <div class="col-lg-4 mb-4">
         <h3>Contact Details</h3>
         <p>
-          Sommardahl Academy LLC
+          Dev Amplifier<br />
+          Sommardahl Ventures LLC
           <br />Murfreesboro, TN 37129
         </p>
         <p>

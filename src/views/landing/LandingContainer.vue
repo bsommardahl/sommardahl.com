@@ -1,7 +1,5 @@
 <template>
-  <div>
-    Loading...
-  </div>
+  <div>Loading...</div>
 </template>
 
 <script>
@@ -15,10 +13,7 @@ export default {
     const international = this.$route.meta.international;
     if (international) {
       this.$store.dispatch("setPriceClass", "international");
-      this.$store.dispatch(
-        "setProgramTitle",
-        "Sommardahl Academy International"
-      );
+      this.$store.dispatch("setProgramTitle");
     } else {
       this.$store.dispatch("setPriceClass", false);
       this.$store.dispatch("setProgramTitle", false);

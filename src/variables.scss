@@ -1,14 +1,29 @@
-$primary: rgb(96, 195, 254);
-$primary-soft: rgba(96, 196, 254, 0.123);
 $lightGray: #eee;
 $muted: #999;
-$navyBlue: rgb(11, 33, 44);
-$fucia: rgb(167, 29, 104);
-$orange: rgb(255, 82, 28);
-$orange-soft: rgba(255, 81, 28, 0.164);
-$lilac: rgb(139, 94, 184);
-$lilac-soft: rgba(139, 94, 184, 0.1);
-$softLilac: rgb(232, 234, 249);
-$periwinkle: rgb(108, 123, 216);
-$periwinkle-soft: rgba(108, 123, 216, 0.1);
 $superMuted: #f8f9fa;
+
+$brown: rgb(176, 146, 83);
+$brown-soft: rgba(176, 146, 83, 0.1);
+$black: rgb(30, 30, 30);
+$black-soft: rgba(30, 30, 30, 0.1);
+$red: rgb(81, 30, 26);
+$red-muted: rgba(81, 30, 26, 0.3);
+$red-soft: rgba(81, 30, 26, 0.1);
+$blue: rgb(10, 18, 45);
+$blue-soft: rgba(10, 18, 45, 0.1);
+$blue-muted: rgba(10, 18, 45, 0.3);
+
+$primary: $brown;
+$primary-soft: $brown-soft;
+$navyBlue: $blue;
+
+$fucia: $brown;
+$orange: $blue-muted;
+$orange-soft: $blue-soft;
+
+$lilac: $brown;
+$lilac-soft: $brown-soft;
+$softLilac: $brown-soft;
+
+$periwinkle: $blue-muted;
+$periwinkle-soft: $blue-soft;

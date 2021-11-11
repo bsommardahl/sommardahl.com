@@ -62,7 +62,7 @@
               you blazing past your classmates while they take some extra time.
             </li>
           </ul>
-          Sommardahl Academy believes a mastery-based approach is the best way
+          Dev Amplifier believes a mastery-based approach is the best way
           to learn the art of software development. Any other approach tends to
           exclude those who need more time and tends to hold back those who can
           move more quickly.
@@ -130,7 +130,7 @@
           question="What kind of instructors and mentors will I work with?"
         >
           <p>
-            Sommardahl Academy constantly searches the world for passionate,
+            Dev Amplifier constantly searches the world for passionate,
             skilled and experienced Full-Stack Developers to serve as mentors,
             instructors and presenters. Each faculty member is recruited using a
             rigorous vetting process that verifies not only their skills but
@@ -245,7 +245,7 @@
           <p>
             If this is on your mind, then you must really understand how a
             self-paced curriculum works! In a mastery-based program like we have
-            in Sommardahl Academy, learning is naturally self-paced. While we
+            in Dev Amplifier, learning is naturally self-paced. While we
             wholeheartedly believe this is the BEST way to learn to code,
             self-paced programs also come with some natural pitfall or risks.
             One such risk is the possibility of getting behind and running out

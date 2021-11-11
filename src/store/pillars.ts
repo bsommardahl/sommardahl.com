@@ -5,7 +5,7 @@ export const pillars = [
     subtitle: "Live 1-on-1 Mentorship",
     isPrimary: true,
     description:
-      "Sommardahl Academy believes mentorship is the key to achieving true mastery in programming. As you learn to code, you will get stuck several times (maybe a pesky semi-colon missing). As a Sommardahl Academy Learner, you have access to a personal mentor who can answer you via chat or even jump on a video call to work it out. Live 1-on-1 mentorship accelerates learning and makes it stick!",
+      "Dev Amplifier believes mentorship is the key to achieving true mastery in programming. As you learn to code, you will get stuck several times (maybe a pesky semi-colon missing). As a Sommardahl Academy Learner, you have access to a personal mentor who can answer you via chat or even jump on a video call to work it out. Live 1-on-1 mentorship accelerates learning and makes it stick!",
     icon: "faPeopleCarry",
   },
   {
@@ -31,7 +31,7 @@ export const pillars = [
     title: "Self-Paced",
     subtitle: "Learn at your own pace",
     description:
-      "Some learn certain concepts quickly, while other concepts may take more time. Sommardahl Academy gives you the freedom to build mastery at your own pace. Some have a natural gift to understand technology and move quickly. Others require more time. Both groups can thrive at Sommardahl Academy.",
+      "Some learn certain concepts quickly, while other concepts may take more time. Dev Amplifier gives you the freedom to build mastery at your own pace. Some have a natural gift to understand technology and move quickly. Others require more time. Both groups can thrive at Sommardahl Academy.",
     icon: "faClock",
     accentColor: "periwinkle",
   },
@@ -40,7 +40,7 @@ export const pillars = [
     title: "Just-In-Time Learning",
     subtitle: "Learn what you need, only when you need it",
     description:
-      "The Sommardahl Academy curriculum is designed to take advantage of how your brain accumulates and retains new information. There's a LOT to learn with programming. We introduce you to thin slices of each relevant technology, just in time for a project to make it stick. ",
+      "The Dev Amplifier curriculum is designed to take advantage of how your brain accumulates and retains new information. There's a LOT to learn with programming. We introduce you to thin slices of each relevant technology, just in time for a project to make it stick. ",
     icon: "faTv",
     accentColor: "lilac",
   },
@@ -49,7 +49,7 @@ export const pillars = [
   //   title: "Remote",
   //   subtitle: "From the Comfort of Anywhere",
   //   description:
-  //     "Sommardahl Academy is 100% remote. That means you can learn to code from just about anywhere. All you need is a computer, internet, power and a comfortable spot.",
+  //     "Dev Amplifier is 100% remote. That means you can learn to code from just about anywhere. All you need is a computer, internet, power and a comfortable spot.",
   //   icon: "faTv",
   //   accentColor: "lilac",
   // },

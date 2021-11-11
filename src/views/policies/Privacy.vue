@@ -3,8 +3,8 @@
     <h1>Privacy Policy</h1>
     <h5>GENERAL</h5>
     <p>
-      Sommardahl Academy, LLC. (“Company” or “we” or “us” or “our”) respects the
-      privacy of its users (“user” or “you”) that use our website located at
+      Sommardahl Ventures, LLC. (“Company” or “we” or “us” or “our”) respects
+      the privacy of its users (“user” or “you”) that use our website located at
       www.sommardahl.com, including other media forms, media channels, mobile
       website or mobile application related or connected thereto (collectively,
       the “Website”). The following Company privacy policy (“Privacy Policy”) is
@@ -467,7 +467,7 @@
     <h5>CONTACT</h5>
     <p>
       If you have any questions regarding our Privacy Policy, please contact our
-      Privacy Officer at: Sommardahl Academy LLC.
+      Privacy Officer at: Sommardahl Ventures LLC.
     </p>
     <p>
       Attn: Privacy Officer

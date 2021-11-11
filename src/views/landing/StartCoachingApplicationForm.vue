@@ -175,6 +175,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/variables";
+
 .cta-component {
   position: relative;
 
@@ -215,7 +217,7 @@ export default {
   }
 
   .btn-cta {
-    background-color: rgb(255, 82, 28);
+    background-color: $primary;
     color: white;
     font-weight: 900;
   }

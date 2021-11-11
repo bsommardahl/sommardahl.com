@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="text-center">
-        <p>Copyright &copy; Sommardahl Academy, LLC 2021</p>
+        <p>Dev Amplifier is Copyright &copy; Sommardahl Ventures, LLC 2021</p>
       </div>
     </div>
     <!-- /.container -->

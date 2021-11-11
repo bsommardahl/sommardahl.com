@@ -12,9 +12,9 @@
     <div class="container mt-5">
       <h3>What is a Fellowship?</h3>
       <p>
-        A fellowship at Sommardahl Academy is an immersive mentorship program
-        with daily touch points as participants address their seniority gaps
-        with targetted learning and guidance.
+        A fellowship at Dev Amplifier is an immersive mentorship program with
+        daily touch points as participants address their seniority gaps with
+        targetted learning and guidance.
       </p>
     </div>
     <div class="container mt-5 text-center">
@@ -23,7 +23,7 @@
       >
     </div>
 
-    <div class="mt-5 pt-3 ">
+    <div class="mt-5 pt-3">
       <div class="container">
         <!-- <QandASection /> -->
       </div>

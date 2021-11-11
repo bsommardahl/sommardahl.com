@@ -17,7 +17,7 @@
       <Formula />-->
 
       <h1 id="curriculum" class="text-center mt-5">
-        The Sommardahl Academy Curriculum
+        The Dev Amplifier Curriculum
       </h1>
       <h5 id="curriculum" class="section-title mb-5">
         Build Mastery from Level to Level

@@ -1,5 +1,5 @@
 <template>
-  <div role="button" @click="$bvModal.show(`modal-${name}`)">
+  <div role="button" @click="$bvModal.show(`modal-${name}`)" class="orange-bg">
     <Icon :name="icon" :size="80" />
     <p class="mt-2">{{ name }}</p>
     <b-modal
@@ -41,4 +41,7 @@ export default {
 };
 </script>
 
-<style></style>
+<style lang="scss">
+.orange-bg {
+}
+</style>

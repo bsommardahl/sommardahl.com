@@ -1,4 +1,4 @@
-# Sommardahl Academy Website
+# Dev Amplifier Website
 
 ## Project setup
 

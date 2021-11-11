@@ -1,10 +1,17 @@
 <template>
   <div>
-    <div class="">
-      <div class="container">
-        <h1 class="mt-5 text-center">The Driven Developer</h1>
-        <h3 class="text-center">Byron Sommardahl</h3>
+    <Hero
+      class="landing-page-hero"
+      :unsplashIds="['uf2nnANWa8Q', 'wMRIcT86SWU', 'bzdhc5b3Bxs']"
+      height="40vh"
+      backgroundColor="rgba(25, 32, 71,0.7)"
+    >
+      <h1>Byron Sommardahl</h1>
+      <h4>The Driven Developer</h4>
+    </Hero>
 
+    <div class="mt-5">
+      <div class="container">
         <video-embed
           :params="{ autoplay: 0 }"
           src="https://youtu.be/az97HgkS-sk"

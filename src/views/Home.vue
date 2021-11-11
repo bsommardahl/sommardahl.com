@@ -40,10 +40,7 @@ export default {
       this.international = this.campaign.indexOf("-int-") > -1;
       if (this.international) {
         this.$store.dispatch("setPriceClass", "international");
-        this.$store.dispatch(
-          "setProgramTitle",
-          "Sommardahl Academy International"
-        );
+        this.$store.dispatch("setProgramTitle");
       }
 
       this.levelup = this.campaign.indexOf("-levelup-") > -1;
