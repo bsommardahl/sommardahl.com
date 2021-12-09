@@ -39,7 +39,7 @@
         <p>
           <span title="Phone">Call/Text:</span>
           <br />
-          <a href="tel:6154614598">+1 (615) 461-4598</a>
+          <a href="tel:6154614598">+1 (615) 808-7105</a>
         </p>
         <p>
           <span title="Email">Email:</span>
